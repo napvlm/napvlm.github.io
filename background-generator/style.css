@@ -108,7 +108,10 @@ a:hover {
 footer {
       position: absolute;
       top: 80%;
-      left:35%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
   }
 
   input[type="color"] {
