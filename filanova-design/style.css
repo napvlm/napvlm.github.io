@@ -1,0 +1,111 @@
+@font-face {
+	font-family:adlanta;
+	src:url(adlanta.otf);
+}
+@font-face {
+	font-family:engravers;
+	src:url(engravers.ttf);
+}
+@font-face {
+	font-family:Orange;
+	src:url(Orange.ttf);
+}
+@font-face {
+	font-family:palatino-linotype;
+	src:url(palatino-linotype.ttf);
+}
+
+body {
+	background-color: #e6e9e6;
+	}
+
+.header {
+	position: relative;
+	background-image: url("bg.png");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.navbar-toggler {
+	background-color: #fff;
+}
+
+.navbar {
+	background-color: #6a5a5b !important;
+}
+
+.navbar .navbar-nav li a  {
+	color: #fff !important;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #ae7070 !important;
+    border-color: #ae7070 !important;
+}
+
+.btn {
+	font-family: 'engravers', 'sans-serif';
+	font-size: 14pt;
+ 	color:black;
+ 	text-shadow: 
+	margin-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 20px;
+	box-shadow: -8px 4px #6d5c5d;
+}
+
+.aboutpic {
+	box-shadow: -21px 17px #6d5c5d;
+}
+
+.aboutlogo {
+	margin:25px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.about {
+	font-family: 'palatino-linotype', 'sans-serif';
+	font-size: 12pt;
+}
+
+.about{
+	margin: 3em 0;
+	padding: 1em;
+	position: relative;
+}
+
+
+.desc {
+	padding: 45px;
+	margin-top: 5em;
+}
+
+.slider {
+	width: 600px;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+
+.carousel {
+	box-shadow: -21px 17px #6d5c5d;
+}
+
+.carousel-inner {
+height: 375px;
+}
+
+.slidertext {
+	text-align: center;
+	width: 800px;
+	margin: 0 auto;
+	padding: 4em;
+}
