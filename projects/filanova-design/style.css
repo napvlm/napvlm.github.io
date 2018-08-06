@@ -43,7 +43,9 @@ body {
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:visited,
-.btn-primary:focus {
+.btn-primary:focus 
+.btn-success,
+.btn-send{
     background-color: #ae7070 !important;
     border-color: #ae7070 !important;
 }
@@ -108,4 +110,25 @@ height: 375px;
 	width: 800px;
 	margin: 0 auto;
 	padding: 4em;
+}
+
+.contact {
+	padding:80px;
+}
+
+#mailform {
+	margin: 0 1px;
+}
+
+
+li {
+	padding:5px;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a {
+	color: black;
 }
