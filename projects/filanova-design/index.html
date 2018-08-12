@@ -4,27 +4,26 @@
 		<meta charset="UTF-8">
 		<title>Alona Filanova | Graphic Designer</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
-		<body>
+		<body data-spy="scroll" data-target=".navbar" data-offset="50">
 			<div class="wrap">
 			<!--navbar start-->
-					<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+					<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						    <span class="navbar-toggler-icon"></span>
 						  </button>
 
 						 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 						    <ul class="navbar-nav mr-auto navbar-left">
-						      	<li class="nav-item active">
-						      		<a class="nav-link" href="#">Who? <span class="sr-only">(current)</span></a>
+						      	<li class="nav-item">
+						      		<a class="nav-link" data-value="about" href="#about">Who? </a>
 						     	</li>
-						     	<li class="nav-item active">
-						       		<a class="nav-link" href="#">What and How? <span class="sr-only">(current)</span></a>
+						     	<li class="nav-item">
+						       		<a class="nav-link" data-value="portfolio" href="#portfolio">What and How? </a>
 						     	</li>
-						     	<li class="nav-item active">
-						        	<a class="nav-link" href="#">Contact us <span class="sr-only">(current)</span></a>
+						     	<li class="nav-item">
+						        	<a class="nav-link" data-value="contact" href="#contact">Contact us </a>
 						     	</li>
 						    </ul>
 					  	</div>
@@ -33,37 +32,40 @@
 			<header class="header"></header>
 
 				<!-- about section --> 
+				<div class="about" id="about">
 						<div class="logo aboutlogo">
-							<img src="logo.png" class="img-fluid" >
+							<img src="img/logo.png" class="img-fluid" >
 						</div>
 						<div class="about">
 							<div class="container">
 								<div class="row">
 							<!-- left side -->
 									<div class="col-lg-4 col-md-4 col-sm-12">
-										<img src="mainpic.png" class="img-fluid aboutpic" >
+										<img src="img/mainpic.png" class="img-fluid aboutpic" >
 									</div>
 								<!-- right side -->
 									<div class="col-lg-8 col-md-8 col-sm-12 desc">
 										<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam provident accusamus, at quasi molestias vero iste aliquid, aliquam fugiat iusto libero dolorem repudiandae quos mollitia alias eum repellendus voluptates! Error quam nostrum optio, corporis quis modi ad dolorem quae veniam asperiores voluptas quisquam animi laborum cupiditate dicta recusandae, voluptatem aliquam vero ab. Nam, vitae in amet? Numquam veniam id ut, magni mollitia omnis eligendi quis libero quibusdam officia impedit quidem quos necessitatibus velit ratione amet sunt debitis aliquam assumenda, laborum iusto expedita quisquam enim. Quis, quia neque quibusdam tenetur maiores sint ullam officia, nam placeat recusandae, cupiditate sapiente, quod unde!</p>
-										<a class="btn btn-primary" href="#" role="button">Read more</a>
+										<a class="btn btn-primary" href="img/Resume.Alona_F.Graphic_Designer.pdf" role="button" download="img/Resume.Alona_F.Graphic_Designer.pdf">						Download CV</a>
 									</div>
 								</div>
 							</div>
 						</div>
+				</div>
 
 				<!-- SLider section -->
+				<div class="portfolio" id="portfolio">
 				<div class="slider">
 					<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 					  <div class="carousel-inner">
 						    <div class="carousel-item active">
-						      <img class="d-block w-100" src="slide1.png" alt="First slide">
+						      <img class="d-block w-100" src="img/slide1.png" alt="First slide">
 							    </div>
 						    <div class="carousel-item">
-						      <img class="d-block w-100" src="slide2.jpg" alt="Second slide">
+						      <img class="d-block w-100" src="img/slide2.jpg" alt="Second slide">
 						    </div>
 						    <div class="carousel-item">
-						      <img class="d-block w-100" src="slide3.jpg" alt="Third slide">
+						      <img class="d-block w-100" src="img/slide3.jpg" alt="Third slide">
 						    </div>
 					  </div>
 					  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -82,10 +84,10 @@
 				</p>
 					<a class="btn btn-primary" href="#" role="button">Studio</a>
 				</div>
-
+				</div>
 				<!--Contact section-->
 						<!-- e-mail form -->
-					<div class="contact">
+					<div class="contact" id="contact">
 						<form id="contact-form" method="post" action="contact.php" role="form">
 									<div class="container">
 										<div class="row">
@@ -158,19 +160,19 @@
 						<ul class="social list-unstyled">
 							<li class="fb">
 								<a href="www.instagram.com/filanovalyona/">
-									<img src="fb.png">
+									<img src="img/fb.png">
 								</a>
 								<a href="www.facebook.com/alyona.filanova">www.instagram.com/filanovalyona/</a>
 							</li>
 							<li class="insta">
 								<a href="www.instagram.com/filanovalyona/">
-									<img src="ig.png">
+									<img src="img/ig.png">
 								</a>
 								<a href="www.instagram.com/filanovalyona/">www.instagram.com/filanovalyona/</a>
 							</li>
 							<li class="vk">
 								<a href="www.vk.com/id20660091">
-									<img src="vk.png">
+									<img src="img/vk.png">
 								</a>
 								<a href="www.vk.com/id20660091">www.vk.com/id20660091</a>
 							</li>
@@ -184,14 +186,14 @@
 			<footer>	
 				<div class="row">
 					<div class="col-lg-4 col-md-4 col-sm-12 footer1">
-						<img src="footlogo.png">
+						<img width="177" height="38" src="img/logofooter.svg">
 					</div>
 					<div class="class col-lg-4 col-md-4 col-sm-12 footer2">
 						<ul class="footlinks list-unstyled">
-							<li><a href="">Who?</a></li>
+							<!-- <li><a href="">Who?</a></li>
 							<li><a href="">What and how?</a></li>
 							<li><a href="">Contact Us</a></li>
-						</ul>
+						</ul> -->
 					</div>
 					<div class="text-muted footer3">
 						<p class="muted">© 2017 – 2018 Alona Filanova</p>
@@ -199,9 +201,13 @@
 				</div>
 					
 			</footer>
-			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+			 <script src="plugins/scroll2section.js"></script>
 			<script type="text/javascript" src="script.js"></script>
 		</body>
 
