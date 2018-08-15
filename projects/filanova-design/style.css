@@ -29,7 +29,7 @@ body {
 }
 
 .navbar-toggler {
-	background-color: #fff;
+	
 }
 
 .navbar {
@@ -112,12 +112,8 @@ height: 375px;
 	padding: 4em;
 }
 
-.contact {
-	padding:80px;
-}
-
-.contactinfo {
-	padding-left: 20px;
+.contactus {
+	text-align: center;
 }
 
 .content {
@@ -162,4 +158,13 @@ footer {
 	text-decoration: underline;
 	padding-top: 85px;
 	text-align: right;
+}
+
+.btntxt {
+	padding-top: 10px;
+}
+
+.widgets {
+    display: flex;
+    justify-content: space-around;
 }
