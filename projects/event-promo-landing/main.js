@@ -54,7 +54,7 @@ $(document).ready(function(){
 	// 	colorTrigger: 'black',
 	// 	indent:200,
 	// 	colorStart: '#75C695'
-	})
+	// })
 	.addTo(controller); 
 
 });
