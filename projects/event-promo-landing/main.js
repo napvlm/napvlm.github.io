@@ -49,11 +49,11 @@ $(document).ready(function(){
 		triggerElement: '#appear'
 	})
 	.setClassToggle('#appear', 'fade-in')
-	.addIndicators({
-		name: 'fade scene',
-		colorTrigger: 'black',
-		indent:200,
-		colorStart: '#75C695'
+	// .addIndicators({
+	// 	name: 'fade scene',
+	// 	colorTrigger: 'black',
+	// 	indent:200,
+	// 	colorStart: '#75C695'
 	})
 	.addTo(controller); 
 
