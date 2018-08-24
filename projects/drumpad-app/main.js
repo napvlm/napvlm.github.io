@@ -6,6 +6,7 @@ function playSound(e) {
 	if (!audio) return; //stop the function from running
 
 	audio.currentTime = 0;
+	audio.load();
 	audio.play(); 
 	key.classList.add('playing');
 };
