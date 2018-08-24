@@ -1,7 +1,9 @@
+
 //to make sure that header will takes up all the screen
 
 $(document).ready(function(){
  $('.bcg').height($(window).height());
+ $('.bcg').width($(window).width());
 });
 
 
@@ -17,20 +19,27 @@ $(this).data('value')).offset().top
 //Scrollspy
 $('body').scrollspy({target: ".navbar"})
 
-//ScrollMagic magic begin here :D 
-// Just a simple parallax
-
+// ScrollMagis starts here
 $(document).ready(function(){
 
-	//init Scrollmagic
-
+ // Init ScrollMagic 
 	var controller = new ScrollMagic.Controller();
-
-	var parallaxScene = new ScrollMagic.Scene({
-		triggerElement: '.parallax',
-		trigerHook: 1,
-		duration: '200%'
+	//about section
+	$('.scrollfade').each(function(){
+	var myScene = new ScrollMagic.Scene({
+		triggerElement: '.scrollfade',
+		reverse: false
 	})
-	.setTween(TweenMax.from('.bcg',1 , {y: '-30%', ease:Power0.easeNone}))
-	.addTo(controller);
+	.setClassToggle('.scrollfade', 'fade-in')
+	.addTo(controller); 
+	});
+	//slider section
+	$('.sliderSM').each(function(){
+	var myScene = new ScrollMagic.Scene({
+		triggerElement: '.sliderSM',
+		reverse: false
+	})
+	.setClassToggle('.sliderSM', 'fade-in')
+	.addTo(controller); 
+	});
 });

@@ -24,6 +24,7 @@ body {
 	background-image: url("img/bg.png");
 	background-position: center;
 	background-size: cover;
+	height: 100%;
 }
 
 .navbar-toggler {
@@ -148,3 +149,26 @@ footer {
     display: flex;
     justify-content: space-around;
 }
+
+.scrollfade {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s ease-out;
+}
+
+.scrollfade.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.sliderSM {
+	 opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s ease-out;
+}
+
+.sliderSM.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
