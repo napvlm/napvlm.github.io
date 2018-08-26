@@ -1,0 +1,85 @@
+@font-face {
+	font-family:Futura Bold;
+	src:url(../fonts/futurabold.ttf);
+}
+
+@font-face {
+	font-family:Futura Bold Italic;
+	src:url(../fonts/futurabold-italic.ttf);
+}
+
+@font-face {
+	font-family:Futura Light;
+	src:url(../fonts/futuralight.ttf);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #f5f5f5;
+}
+.navbar {
+	padding-top:20px;
+	padding-left: 20px;
+}
+#logo {
+	font-family: "Futura Bold Italic";
+	font-size: 36px;
+	color: #FFF;
+	background-color: red;
+	display: inline-block;
+	padding:5px;
+}
+
+#logo a {
+	text-decoration: none;
+	color:#fff;
+}
+
+.nav {
+	display: inline-block;
+	float: right;
+}
+
+.nav a {
+	font-family: "Futura Light";
+	font-size: 16px;
+	color: #1b1b1b;
+	display: inline-block;
+	margin: 10px 50px;
+	text-decoration: none;
+}
+
+.nav a:hover {
+	background: red;
+	color: #fff;
+}
+
+
+
+.container {
+	margin: 0 auto;
+	z-index: -1;
+}
+
+
+
+footer {
+	text-align: right;
+	font-family: "Futura Light";
+	font-size: 14px;
+	margin: 10px;
+}
+
+footer a {
+	text-decoration: none;
+	color: #1b1b1b;
+}
+
+footer a:hover {
+	text-decoration: none;
+	background: red;
+	color: #fff;
+}
