@@ -19,20 +19,20 @@
     });
 
     // pinned section
-	$("section").each(function() {
+	// $("section").each(function() {
  
-    new ScrollMagic.Scene({
-        triggerElement: this
-    })
-    .setPin(this)
-    .addTo(ctrl);
+ //    new ScrollMagic.Scene({
+ //        triggerElement: this
+ //    })
+ //    .setPin(this)
+ //    .addTo(ctrl);
  
-	});
+	// });
 	//fade in for section
 	$('.slideTwo').each(function(){
 	var myScene = new ScrollMagic.Scene({
 		triggerElement: '.slideTwo',
-		reverse: true
+		reverse: false
 	})
 	.setClassToggle('.slideTwo', 'fade-in')
 	.addTo(ctrl); 
@@ -41,7 +41,7 @@
 	$('.slideThree').each(function(){
 	var myScene = new ScrollMagic.Scene({
 		triggerElement: '.slideThree',
-		reverse: true
+		reverse: false
 	})
 	.setClassToggle('.slideThree', 'fade-in')
 	.addTo(ctrl); 
@@ -50,7 +50,7 @@
 	$('.slideFour').each(function(){
 	var myScene = new ScrollMagic.Scene({
 		triggerElement: '.slideFour',
-		reverse: true
+		reverse: false
 	})
 	.setClassToggle('.slideFour', 'fade-in')
 	.addTo(ctrl); 
