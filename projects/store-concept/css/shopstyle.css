@@ -98,7 +98,7 @@ body {
 	display: inline-block;
 	float: left;
 	margin: 60px;
-	/*margin-top:200px;*/
+	margin-top:200px;
 }
 
 .info h1 {
@@ -195,7 +195,7 @@ body {
 
 .slideTwo {
     opacity: 0;
-    /*transform: translateY(150px);*/
+    /*transform: translateY(50px);*/
     transition: all 1s cubic-bezier(.18,.96,.63,.99);
 }
 
@@ -207,7 +207,7 @@ body {
 
 .slideThree {
     opacity: 0;
-    /*transform: translateY(150px);*/
+    /*transform: translateY(50px);*/
     transition: all 1s cubic-bezier(.18,.96,.63,.99);
 }
 
@@ -219,7 +219,7 @@ body {
 
 .slideFour {
     opacity: 0;
-    /*transform: translateY(150px);*/
+    /*transform: translateY(50px);*/
     transition: all 1s cubic-bezier(.18,.96,.63,.99);
 }
 
