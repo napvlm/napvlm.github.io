@@ -14,12 +14,14 @@
 }
 
 body {
-	background: #f5f5f5;
+	background: #ffff;
 }
 .navbar {
 	padding-top:20px;
 	padding-left: 20px;
+	z-index: 100;
 }
+
 #logo {
 	font-family: "Futura Bold Italic";
 	font-size: 36px;
@@ -37,7 +39,6 @@ body {
 .nav {
 	display: inline-block;
 	float: right;
-	z-index: 100;
 }
 
 .nav a {
@@ -54,127 +55,63 @@ body {
 	color: #fff;
 }
 
-.nav-bottom {
-	display: block;
-	float: right;
-	margin:20px;
-}
-
-.nav-bottom a {
-	font-family: "Futura Light";
-	font-size: 16px;
-	color: #1b1b1b;
-	display: inline-block;
-	margin: 10px 50px;
-	text-decoration: none;
-}
-
-.nav-bottom a:hover {
-	background: red;
-	color: #fff;
-}
-
 #main {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .horizontal-container {
-    width: 1000%;
+    width: 300%;
     height: 100vh;
     position: relative;
 }
 .section-horizontal {
-    width: 16.6666%;
+    width: 33.3333%;
     height: 100%;
 }
-
 .section-1 {
     position: absolute;
     top: 0;
-    left: 0%;
-    right: 10%;
+    left: 0;
+    right: 33.3333%;
     bottom: 0;
 }
-
 .section-2 {
     position: absolute;
     top: 0;
-    left: 20%;
-    right: 30%;
+    left: 33.3333%;
+    right: 66.6666%;
     bottom: 0;
 }
-
 .section-3 {
     position: absolute;
     top: 0;
-    left: 30%;
-    right: 40%;
-    bottom: 0;
-}
-
-.section-4 {
-    position: absolute;
-    top: 0;
-    left: 40%;
-    right: 50%;
-    bottom: 0;
-}
-
-.section-5 {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 60%;
-    bottom: 0;
-}
-
-.section-6 {
-    position: absolute;
-    top: 0;
-    left: 60%;
-    right: 70%;
-    bottom: 0;
-}
-
-.section-7 {
-    position: absolute;
-    top: 0;
-    left: 70%;
-    right: 80%;
-    bottom: 0;
-}
-
-.section-8 {
-    position: absolute;
-    top: 0;
-    left: 80%;
-    right: 90%;
-    bottom: 0;
-}
-
-.section-9 {
-    position: absolute;
-    top: 0;
-    left: 80%;
-    right: 90%;
-    bottom: 0;
-}
-
-.section-10 {
-    position: absolute;
-    top: 0;
-    left: 90%;
+    left: 66.6666%;
     right: 100%;
     bottom: 0;
 }
 
+
 img {
  display: inline-block;
+ max-height: 559px;
+}
+
+.content {
+	margin-left: 30px;
+}
+
+.content::before {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 0;
+  border-top: 65px dashed rgba(232, 39, 39, 0.8);
+  width: 100%;
+  transform: translateY(-50%);
 }
 
 .credit {
-	display: inline-block;
-	float: left;
+	text-align: center;
 	font-family: "Futura Light";
 	font-size: 14px;
 	margin-top: 50px;
@@ -191,3 +128,5 @@ img {
 	background: red;
 	color: #fff;
 }
+
+
