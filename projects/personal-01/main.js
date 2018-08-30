@@ -18,12 +18,3 @@
 
 //Disable scroll on .overlay 
 
-function noscroll() {
-  window.scrollTo( 0, 0 );
-}
-
-// add listener to disable scroll
-window.addEventListener('scroll', noscroll);
-
-// Remove listener to disable scroll
-window.removeEventListener('scroll', noscroll);
