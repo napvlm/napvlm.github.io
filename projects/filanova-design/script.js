@@ -1,12 +1,4 @@
 
-//to make sure that header will takes up all the screen
-
-$(document).ready(function(){
- $('.bcg').height($(window).height());
- $('.bcg').width($(window).width());
-});
-
-
 // scroll to anchor
 $(".navbar a").click(function(){
 	$("body,html").animate({
