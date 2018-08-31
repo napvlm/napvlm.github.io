@@ -90,7 +90,7 @@ body {
 }
 
 .slider {
-	width: 600px;
+	max-width: 600px;
 	margin: 0 auto;
 	padding-top: 60px;
 }
@@ -100,13 +100,14 @@ body {
 }
 
 .carousel-inner {
-height: 375px;
+	max-height: 375px;
+	
 }
 
 .slidertext {
 	font-size: 12pt;
 	text-align: center;
-	width: 800px;
+	max-width: 800px;
 	margin: 0 auto;
 	padding: 4em;
 }
