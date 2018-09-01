@@ -50,7 +50,6 @@ body {
 
 .nav a {
 	font-family: "Futura Light";
-	font-size: 16px;
 	color: #1b1b1b;
 	display: inline-block;
 	margin: 10px 50px;
@@ -68,44 +67,37 @@ body {
 
 .model {
 	display: inline-block;
-	max-width: 50%;
-	text-align: center;
 	float: left;
-}
-
-.model img {
-	max-width: 500px;
 }
 
 .info {
 	display: inline-block;
 	float: left;
-	margin: 60px;
-	margin-top:200px;
+	max-width: 80%;
+	margin-left: 5%;
+	margin-top: 5%;
 }
 
 .info h1 {
 	font-family: "Futura Bold";
-	font-size: 40px;
-	margin-bottom: 50px;
 }
 
 .info p {
 	font-family: "Futura Light";
-	font-size: 14px;
 }
 
 .price {
 	font-family: "Futura Bold";
 	text-transform: uppercase;
-	font-size: 24px;
-	display: block;
 }
 
 .title {
 	font-family: "Futura Bold";
 	text-transform: uppercase;
-	font-size: 18px;
+	display: inline-block;
+}
+
+.sizes {
 	display: inline-block;
 }
 
@@ -132,7 +124,6 @@ body {
 .action-btns {
 	font-family: "Futura Light";
 	text-transform: uppercase;
-	font-size: 14px;
 }
 .action-btns .red-hollow-btn {
 	cursor: crosshair;
@@ -176,7 +167,7 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    margin-top: 60px;
+    margin-top: 100px;
     overflow: hidden;
 } 
 
@@ -238,19 +229,124 @@ body {
 
 .liBg1 {
 	background: url('../img/jacket1.jpg');
+	background-size: cover; 
 }
 
 .liBg2 {
 	background: url('../img/jacket2.jpg');
+	background-size: cover;
 }
 
 .liBg3 {
 	background: url('../img/jacket3.jpg');
+	background-size: cover;
 }
 
 .liBg4 {
 	background: url('../img/jacket4.jpg');
+	background-size: cover;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.side-nav a {
+	border: 2px solid  #d8d8d8;
+	margin-top: 10px;
+	width: 30px;
+	height: 26px;
+	transition: all 0.3s linear;
+	display: block;
+	}
+	
+	.nav a {
+	font-family: "Futura Light";
+	color: #1b1b1b;
+	display: block;
+	margin:0;
+	text-decoration: none;
+	}
+
+	.model {
+	display:block;
+	height:40%;
+	}
+
+	.model img {
+		height: 30vh;
+	}
+
+	.action-btns .red-hollow-btn {
+		cursor: crosshair;
+		border: 2px solid red;
+		color: red;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 120px;
+		height: 35px;
+	}
+	.action-btns .light-grey-btn {
+		cursor: pointer;
+		background: #d8d8d8;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 120px;
+		height: 35px;
+	}
 
 
+
+}
+
+@media (max-width: 767px) {
+	.side-nav a {
+	border: 2px solid  #d8d8d8;
+	margin-top: 10px;
+	width: 30px;
+	height: 26px;
+	transition: all 0.3s linear;
+	display: block;
+	}
+	
+	.nav a {
+	font-family: "Futura Light";
+	color: #1b1b1b;
+	display: block;
+	margin:0;
+	text-decoration: none;
+	}
+
+	.model {
+	display:block;
+	height:40%;
+	}
+
+	.model img {
+		height: 30vh;
+	}
+
+	.action-btns .red-hollow-btn {
+		cursor: crosshair;
+		border: 2px solid red;
+		color: red;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 120px;
+		height: 35px;
+	}
+	.action-btns .light-grey-btn {
+		cursor: pointer;
+		background: #d8d8d8;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 120px;
+		height: 35px;
+	}
+
+
+
+
+}
