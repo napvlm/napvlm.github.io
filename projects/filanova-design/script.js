@@ -19,6 +19,7 @@ $(document).ready(function(){
 	//about section
 	$('.scrollfade').each(function(){
 	var myScene = new ScrollMagic.Scene({
+		triggerHook: 1,
 		triggerElement: '.scrollfade',
 		reverse: false
 	})
@@ -28,6 +29,7 @@ $(document).ready(function(){
 	//slider section
 	$('.sliderSM').each(function(){
 	var myScene = new ScrollMagic.Scene({
+		triggerHook: 1,
 		triggerElement: '.sliderSM',
 		reverse: false
 	})
