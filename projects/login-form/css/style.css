@@ -1,5 +1,6 @@
 
 /* CSS Reset */
+
 html, body, div, span, applet, object, iframe, 
 blockquote, pre, h1, h2, h3, h4, h5, h6,
 a, abbr, acronym, address, big, cite, code,
@@ -13,45 +14,46 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 /* End CSS Reset */
 
 /* General settings */
 body {
-	line-height: normal;
+    line-height: normal;
     font-size: 15px;
     font-weight: 400;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -59,43 +61,44 @@ body {
 
 
 button:hover {
-	cursor: pointer;
-	-webkit-box-shadow: 4px 18px 18px 0px rgba(0,0,0,0.19);
+    cursor: pointer;
+    -webkit-box-shadow: 4px 18px 18px 0px rgba(0,0,0,0.19);
     -moz-box-shadow: 4px 18px 18px 0px rgba(0,0,0,0.19);
     box-shadow: 4px 4px 18px 0px rgba(0,0,0,0.19);
     transition: .2s ease-out;
 }
 
 .container {
-	display: grid;
+    display: grid;
 }
 
 .muted {
-	color: #616983;
+    color: #616983;
+    font-size: 16px;
 }
 /* End General settings */
 
-/* left side */
+/* left side info */
 .help {
-	grid-column: 1;
-	height: 100vh;
-	background-image: -webkit-linear-gradient(top left, rgb(107, 168, 220), rgb(89, 81, 185));
-	background-image: -o-linear-gradient(top left, rgb(107, 168, 220), rgb(89, 81, 185));
-	background-image: linear-gradient(to bottom right, rgb(107, 168, 220), rgb(89, 81, 185));
+    grid-column: 1;
+    height: 100vh;
+    background-image: -webkit-linear-gradient(top left, rgb(107, 168, 220), rgb(89, 81, 185));
+    background-image: -o-linear-gradient(top left, rgb(107, 168, 220), rgb(89, 81, 185));
+    background-image: linear-gradient(to bottom right, rgb(107, 168, 220), rgb(89, 81, 185));
 }
 
 .info {
-	text-align: center;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	color: #fff;
-	z-index: 20;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    z-index: 20;
 }
 
 
 .bg_curve1 {
-	position: absolute;
+    position: absolute;
     top: 10%;
     left: -185%;
     right: 0;
@@ -106,7 +109,7 @@ button:hover {
 }
 
 .bg_curve2 {
-	position: absolute;
+    position: absolute;
     top: 0%;
     left: -135%;
     right: 0;
@@ -117,7 +120,7 @@ button:hover {
 }
 
 .bg_curve3 {
-	position: absolute;
+    position: absolute;
     top: 0;
     left: -75%;
     right: 0;
@@ -128,7 +131,7 @@ button:hover {
 }
 
 .bg_curve4 {
-	position: absolute;
+    position: absolute;
     top: 0;
     left: -65%;
     right: 0;
@@ -140,7 +143,7 @@ button:hover {
 
 
 .bg_curve5 {
-	position: absolute;
+    position: absolute;
     top: 0;
     left: -10%;
     right: 0;
@@ -151,12 +154,12 @@ button:hover {
   }
 
 .curved-side {
-	position: relative;
-	float:right;
-	height: 100vh;
-	margin: 0;
-	padding:0;
-	z-index: 11;
+    position: relative;
+    float:right;
+    height: 100vh;
+    margin: 0;
+    padding:0;
+    z-index: 11;
 
 }
 
@@ -173,15 +176,19 @@ button:hover {
     font-size: 12px;
     text-transform: uppercase;
     font-weight: bold;
-    color: white;
+}
+
+.hc a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .btwn {
-	display: inline-block;
+    display: inline-block;
 }
 
 .sup {
-	border-radius: 5px;
+    border-radius: 5px;
     -webkit-box-shadow: 2px 2px 11px 0px rgba(0,0,0,0.19);
     -moz-box-shadow: 2px 2px 11px 0px rgba(0,0,0,0.19);
     box-shadow: 2px 2px 11px 0px rgba(0,0,0,0.19);
@@ -194,10 +201,15 @@ button:hover {
     font-weight: bold;
     color: white;
 }
+
+.sup a {
+    text-decoration: none;
+    color: #fff;
+}
 /*End Buttons*/
 
 .logo {
-	display: inline-block;
+    display: inline-block;
     vertical-align: middle;
     width: 200px;
     height: 40px;
@@ -206,18 +218,47 @@ button:hover {
     background-repeat: no-repeat;
     background-position: center;
     }
-/* end left side */
+/* end left side info */
 
+/* Right side login form */
 .login {
-	grid-column: 2;
-	background-color: #10172f;
-	z-index: 10;
+    grid-column: 2;
+    background-color: rgb(13, 22, 46);
+    z-index: 10;
 }
 
 .form {
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
 }
+
+.form a {
+    text-decoration: none;
+    color: #3a91e2;
+}
+
+.log-btn {
+
+        margin-top: 20px;
+    /*width: 500px;*/
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 11px 0px rgba(0,0,0,0.19);
+    -moz-box-shadow: 2px 2px 11px 0px rgba(0,0,0,0.19);
+    box-shadow: 2px 2px 11px 0px rgba(0,0,0,0.19);
+    background: -moz-linear-gradient(to right,#127ef9 0%,#54c3fe 100%);
+    background: -webkit-linear-gradient(to right,#127ef9 0%,#54c3fe 100%);
+    background: linear-gradient(to right,#127ef9 0%,#54c3fe 100%);
+    border: none;
+    outline: none;
+    padding: 20px 123px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bde6', endColorstr='#00c4db',GradientType=1 );
+    transition: all 0.4s ease;
+}
+
