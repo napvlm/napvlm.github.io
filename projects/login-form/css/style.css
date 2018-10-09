@@ -270,8 +270,16 @@ input[type="email"] {
     padding: 20px 123px 20px 0px;
     font-size: 17px; 
     color: #fff;
+    outline: none;
 }
 
+input[type="email"]:focus {
+    border-bottom: 1px solid #0bbb33;
+}
+
+input[type="email"]:valid {
+    border-bottom: 1px solid red;
+}
 input[type="password"] {
     border: none;
     border-bottom: 1px solid #616983;
@@ -279,15 +287,11 @@ input[type="password"] {
     padding: 20px 123px 20px 0px;
     font-size: 17px;
     color: #fff;
+    outline: none;
 }
 
 input[type="password"]:focus {
-    border: none;
-    border-bottom: 2px solid blue;
-    background-color: transparent;
-    padding: 20px 123px 20px 0px;
-    font-size: 17px;
-    color: #fff;
+    border-bottom: 1px solid #2487eb;
 }
 
 ::placeholder {
