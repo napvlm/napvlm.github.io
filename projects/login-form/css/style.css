@@ -273,13 +273,11 @@ input[type="email"] {
     outline: none;
 }
 
-input[type="email"]:focus {
-    border-bottom: 1px solid #0bbb33;
+input[type="email"]:valid {
+        border-bottom: 1px solid #0bbb33;
+
 }
 
-input[type="email"]:valid {
-    border-bottom: 1px solid red;
-}
 input[type="password"] {
     border: none;
     border-bottom: 1px solid #616983;
@@ -290,7 +288,7 @@ input[type="password"] {
     outline: none;
 }
 
-input[type="password"]:focus {
+input[type="password"]:valid {
     border-bottom: 1px solid #2487eb;
 }
 

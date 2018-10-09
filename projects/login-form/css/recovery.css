@@ -271,6 +271,7 @@ input[type="email"] {
     padding: 20px 123px 20px 0px;
     font-size: 17px; 
     color: #fff;
+    outline: none;
 }
 
 
