@@ -280,3 +280,26 @@ input[type="password"] {
     font-size: 17px;
     color: #fff;
 }
+
+input[type="email"]:focus {
+     border: none;
+    border-bottom: 2px solid green;
+    background-color: transparent;
+    padding: 20px 123px 20px 0px;
+    font-size: 17px; 
+    color: #fff;
+}
+
+input[type="password"]:focus {
+    border: none;
+    border-bottom: 2px solid blue;
+    background-color: transparent;
+    padding: 20px 123px 20px 0px;
+    font-size: 17px;
+    color: #fff;
+}
+
+::placeholder {
+    color: #616983;
+    opacity: 1; /* Firefox */
+}
