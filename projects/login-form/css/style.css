@@ -49,7 +49,7 @@ table {
     box-sizing: border-box;
 }
 
-/* End CSS Reset */
+/* END CSS Reset */
 
 /* General settings */
 body {
@@ -76,7 +76,7 @@ button:hover {
     color: #616983;
     font-size: 16px;
 }
-/* End General settings */
+/* END General settings */
 
 /* left side info */
 .help {
@@ -206,7 +206,7 @@ button:hover {
     text-decoration: none;
     color: #fff;
 }
-/*End Buttons*/
+/*END Buttons*/
 
 .logo {
     display: inline-block;
@@ -218,7 +218,7 @@ button:hover {
     background-repeat: no-repeat;
     background-position: center;
     }
-/* end left side info */
+/* END left side info */
 
 /* Right side login form */
 .login {
@@ -240,6 +240,7 @@ button:hover {
     color: #3a91e2;
 }
 
+/* Log In button */
 .log-btn {
     margin-top: 34px;
     border-radius: 5px;
@@ -262,7 +263,9 @@ button:hover {
     box-shadow: 4px 4px 18px 0px rgba(84, 195, 254,0.19);
     transition: .2s ease-out;
 }
+/* END Log In button */
 
+/* Inputs */
 input[type="email"] {
     border: none;
     border-bottom: 1px solid #616983;
@@ -274,8 +277,7 @@ input[type="email"] {
 }
 
 input[type="email"]:valid {
-        border-bottom: 1px solid #0bbb33;
-
+    border-bottom: 1px solid #0bbb33;
 }
 
 input[type="password"] {
@@ -296,3 +298,56 @@ input[type="password"]:valid {
     color: #616983;
     opacity: 1; /* Firefox */
 }
+
+.validation {
+  width: 160px;
+  padding: 10px;
+  margin-top: 85px;
+  position: absolute;
+  margin-left: 5px;
+  top: 0;
+  z-index: 9999;
+  color: #616983;
+  border: solid 1px #fff;
+  background-color: #fff;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.validation:before, .validation:after {
+  content: '';
+  position: absolute;
+  right: 100%;
+  border: solid transparent;
+  height: 0;
+  width: 0;
+}
+.validation:before {
+  border-right-color: #fff;
+  border-width: 10px;
+  top: 14px;
+  margin-top: -5px;
+}
+.validation:after {
+  border-right-color: #fff;
+  border-width: 6px;
+  top: 14px;
+  margin-top: -3px;
+}
+
+/* toggle visibility and highlight */
+.is-visible {
+    visibility: hidden;
+    transition: .4s ease-in;
+}
+
+.redline {
+    border-bottom: 1px solid red;
+}
+
+/* END toggle visibility and highlight */
+
+/* END Input*/ 
+
+/* END Right side login form*/
