@@ -49,7 +49,7 @@ table {
     box-sizing: border-box;
 }
 
-/* End CSS Reset */
+/* END CSS Reset */
 
 /* General settings */
 body {
@@ -76,7 +76,7 @@ button:hover {
     color: #616983;
     font-size: 16px;
 }
-/* End General settings */
+/* END General settings */
 
 /* left side info */
 .help {
@@ -218,7 +218,7 @@ button:hover {
     background-repeat: no-repeat;
     background-position: center;
     }
-/* end left side info */
+/* END left side info */
 
 /* Right side login form */
 .login {
@@ -228,10 +228,7 @@ button:hover {
 }
 
 .form {
-    /*display: inline-block;*/
     position: relative;
-    /*top: 50%;*/
-    /*transform: translateY(-50%);*/
     color: #fff;
     padding-top: 135px;
 }
@@ -274,7 +271,9 @@ input[type="email"] {
     outline: none;
 }
 
-
+input[type="email"]:valid {
+    border-bottom: 1px solid #0bbb33;
+}
 
 ::placeholder {
     color: #616983;
@@ -284,3 +283,5 @@ input[type="email"] {
 .nav {
     padding-top: 85px;
 }
+
+/*END Right side login form*/
