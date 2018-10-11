@@ -1,0 +1,268 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Lato', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END CSS Reset */
+
+/* Main wrap */
+.row {
+	height: 100vh;
+}
+
+.logo {
+	margin-top: 50px;
+}
+/* END Main wrap */
+
+/* Background */
+body {
+	color: #fff;
+	background: linear-gradient(-45deg, #ca4175, #e68242, #ca4175, #e68242);
+	background-size: 200% 200%;
+	-webkit-animation: Gradient 30s ease infinite;
+	-moz-animation: Gradient 30s ease infinite;
+	animation: Gradient 30s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+img {
+	position: absolute;
+}
+
+.front {
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+}
+
+.back {
+	-webkit-filter:blur(2px);
+}
+
+/* END Background */
+
+/* About */
+h1 {
+	padding-top: 165px;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.about {
+	margin: 50px 0px;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 14px;
+}
+
+.call {
+	margin-top: 20px;
+	color: rgba(255, 255, 255, 0.8);
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+h3 {
+	color: rgba(255, 255, 255, 0.8);
+	text-transform: uppercase;
+}
+
+.italic {
+	font-style: italic;
+}
+/* END About */
+
+/* Form */
+form {
+	margin-top: 
+}
+
+input[type="name"] {
+	width: 268px;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    padding: 10px 0px 10px 0px;
+    font-size: 14px; 
+    color: #fff;
+    outline: none;
+}
+
+input[type="tel"] {
+	width: 268px;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    padding: 10px 0px 10px 0px;
+    font-size: 14px; 
+    color: #fff;
+    outline: none;
+}
+
+input[type="email"] {
+	width: 268px;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    padding: 10px 0px 10px 0px;
+    font-size: 14px;
+    color: #fff;
+    outline: none;
+}
+
+::placeholder {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.btn {
+	width: 268px;
+	height: 40px;
+	margin-top: 34px;
+    border-radius: 15px;
+    background: #fff;
+    border: none;
+    outline: none;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 50px;
+}
+
+.btn:hover {
+	background: gold;
+	transition: 0.4s ease-in;
+}
+/* END Form */
+
+/* Media queries */
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .bg {
+  	display:none;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  .bg {
+  	display:none;
+  }
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .bg {
+  	display:none;
+  }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .bg {
+  	display:none;
+  }
+  }
