@@ -63,6 +63,7 @@ body {
 	-webkit-animation: Gradient 30s ease infinite;
 	-moz-animation: Gradient 30s ease infinite;
 	animation: Gradient 30s ease infinite;
+	overflow-x: hidden;
 }
 
 @-webkit-keyframes Gradient {
