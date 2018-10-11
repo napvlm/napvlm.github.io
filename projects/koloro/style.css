@@ -108,13 +108,17 @@ img {
 
 .front {
 	position: absolute;
+	margin-right: 125px;
 	z-index: 1;
 	bottom: 0;
 	right: 0;
 }
 
 .back {
+	position: absolute;
 	-webkit-filter:blur(2px);
+	left: 50%;
+	bottom: 0;
 }
 
 /* END Background */
@@ -125,6 +129,10 @@ h1 {
 	font-size: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
+}
+
+.main {
+	z-index: 1;
 }
 
 .about {
@@ -210,7 +218,8 @@ input[type="email"] {
 
 .btn:hover {
 	background: gold;
-	transition: 0.4s ease-in;
+	transition: 0.3s ease-in;
+	transform: scale(1.01);
 }
 /* END Form */
 
@@ -227,6 +236,10 @@ input[type="email"] {
   .bg {
   	display:none;
   }
+
+  .main {
+  	text-align: center;
+  }
   
 }
 
@@ -240,6 +253,10 @@ input[type="email"] {
   .bg {
   	display:none;
   }
+
+  .main {
+  	text-align: center;
+  }
   
 }
 
@@ -252,6 +269,10 @@ input[type="email"] {
   
   .bg {
   	display:none;
+  }
+
+  .main {
+  	text-align: center;
   }
   
 }
