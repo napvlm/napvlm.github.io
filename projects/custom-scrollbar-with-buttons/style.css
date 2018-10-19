@@ -1,0 +1,403 @@
+ CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Montserrat', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END CSS Reset */
+
+/* Navbar */
+
+header img {
+	position: relative;
+	margin-top: 15px;
+}
+
+#home {
+	float: right;
+	margin-top: 15px;
+}
+.black-btn {
+	width: 95px;
+	height: 25px;
+	border-radius: 15px;
+	border: none;
+	background-color: #3c3c3c;
+	font-size: 9px;
+	font-weight: bold;
+	color: #fff;
+	position: right;
+}
+
+.black-btn:hover {
+	cursor: pointer;
+}
+/* END Navbar*/
+
+/* Global settings */
+button:focus {
+	outline:0;
+	transform: scale(0.95);
+	transition: ease-in 0.3s;
+}
+
+* {box-sizing:border-box}
+
+/* END Global settings */
+
+
+/* Profile settings section */
+.profile-settings h3 {
+	margin: 30px 0px;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#camera {
+	margin-bottom: 145px;
+	display: inline-block;
+}
+
+#avatar {
+	display: 
+}
+
+.avatar {
+	display: inline-block;
+	float: left;
+}
+
+.info {
+	display: inline-block;
+	margin-left: 20px;
+	margin-bottom: 75px;
+}
+
+.info h3 {
+	text-transform: none;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.info p {
+	font-size: 12px;
+}
+
+.bottom-line-01 {
+	display: block;
+	color: #787878;
+}
+
+.bottom-line-01 hr {
+	width: 370px;
+	margin-left: -90px;
+	float: left;
+	overflow-x: hidden;
+}
+
+.bottom {
+	display: inline-block;
+	font-size: 9px;
+	font-weight: bold;
+}
+/* END Profile settings section */
+
+/* Payment settings section */
+.payment-settings {
+	margin-top: 40px;
+}
+
+.card-info {
+	display: inline-block;
+	float: left;
+}
+
+.card {
+	width: 167px;
+	height: 105px;
+	margin-top: 10px;
+	background-image: url('img/card.png');
+	background-size: cover;
+	border:none;
+	color: #fff;
+}
+
+.card-number {
+	font-size: 10px;
+	display: flex;
+	justify-content: space-between;
+	width: 150px;
+	text-align: center;
+	margin-top: 55px;
+	margin-left: 10px;
+}
+
+.cvv {
+	font-size: 8px;
+	margin-left: 10px; 
+	margin-bottom: 14px;
+}
+
+.name {
+	text-transform: uppercase;
+	font-size: 8px;
+	margin-left: 10px;
+}
+
+.card-info h4 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.ylw-btn {
+	width: 167px;
+	height: 25px;
+	border-radius: 15px;
+	border: none;
+	background-color: #ffd781;
+	font-size: 9px;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.ylw-btn:hover {
+	cursor: pointer;
+}
+
+.balance {
+	margin-left: 20px;
+	display: inline-block;
+}
+
+.balance h4 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.amount {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.balance-info {
+	width: 167px;
+	height: 105px;
+	margin-top: 10px;
+	background-image: url('img/elips.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	border:none;
+}
+
+.balance-info h1 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.bottom-line-02 {
+	display: inline-block;
+	color: #787878;
+}
+
+.bottom-line-02 hr {
+	width: 360px;
+	margin-left: -90px;
+	float: left;
+	overflow-x: hidden;
+}
+/* END Payment settings section*/
+
+/* User status */
+.status {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 350px;
+}
+
+.status h3 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #b4b4b4;
+}
+
+.status h3:hover {
+	cursor: pointer;
+}
+
+.is-active {
+	color: #92a0ad !important;
+}
+
+#info {
+	display: inline-block;
+	float: right;
+	padding-left: 5px;
+}
+
+#info:hover {
+	cursor: pointer;
+}
+/* END User status */
+
+
+/* Right side slider s muzhikami */
+
+.men-row-wrap {
+	float: right;
+	margin-top: 15px;
+}
+
+#man-name {
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 8px;
+}
+
+.men-row {
+	width: 540px;
+	height: 95px;
+	overflow-y: hidden;
+	overflow-x: auto;
+	display: flex;
+	text-align: center;
+	z-index: 1;
+}
+
+.men-row img {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.placeholder-man img:hover {
+	cursor: pointer;
+}
+
+.placeholder-man img:active {
+	transform: scale(0.85);
+	transition: ease-in 0.3s;
+}
+/* Scrollbar */
+.men-row::-webkit-scrollbar {
+  height: 8px;	
+}
+
+.men-row::-webkit-scrollbar,*/
+.men-row::-webkit-scrollbar-thumb,
+.men-row::-webkit-scrollbar-track { 
+    width: 2px;
+    border: none;
+}
+
+.men-row::-webkit-scrollbar-track-piece,
+.men-row::-webkit-scrollbar-corner,
+.men-row::-webkit-resizer {
+    display: none;
+}
+
+.men-row::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: #fff;
+    border: 2px solid #b4b4b4;
+}
+
+.men-row::-webkit-scrollbar-track {
+   background-image: url("img/scrollbg.png");
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.men-row::-webkit-scrollbar-button:horizontal:decrement {
+	background-image: url('img/arrow-left.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.men-row::-webkit-scrollbar-button:horizontal:increment {
+	background-image: url('img/arrow-right.png');
+	background-position: center;
+	background-repeat: no-repeat;
+} 
+/* Disabling left/right arrows*/
+.men-row::-webkit-scrollbar-button:horizontal:decrement:end { 
+	display: none; 
+}
+
+.men-row::-webkit-scrollbar-button:horizontal:increment:start {
+	display:none;
+}
+
+/* Blur effect */
+.overlay-01 {
+	position: absolute;
+	width: 270px;
+	height: 80px;
+	z-index: 10;
+    background-image: linear-gradient(90deg, rgba(255,255,255) 5%, rgba(0,0,0,0)30%);
+}
+
+.overlay-02 {
+	position: absolute;
+	margin-left: 270px;
+	width: 270px;
+	height: 80px;
+	z-index: 20;
+    background-image: linear-gradient(-90deg, rgba(255,255,255) 5%, rgba(0,0,0,0)30%);
+}
+/* END Blur effect */
+/* END Right side slider s muzhikami */
