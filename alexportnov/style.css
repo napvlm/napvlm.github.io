@@ -48,13 +48,13 @@ table {
 }
 
 body {
-	background-color: #2d283e;
+	background-color: #000;
 	font-family: 'Lato', sans-serif;
 }
 
 .start {
 	position: absolute;
-	top: 30%;
+	top: 45%;
 	left: 50%;
 	transform: translate(-50%,-30%);
 	text-align: left;
@@ -103,6 +103,19 @@ body {
 	background-size: cover;
 	position: fixed;
 	bottom: 0;
+	left: 0;
+	height: 35vh;
+	width: 100%;
+	filter: blur(5px);
+}
+
+.top__bg {
+	background-image: url('https://images.unsplash.com/photo-1505022610485-0249ba5b3675?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f5f7e68c5df4c4fbcdf755c192ce5be9&auto=format&fit=crop&w=1350&q=80');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	top: 0;
 	left: 0;
 	height: 35vh;
 	width: 100%;
