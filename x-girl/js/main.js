@@ -1,3 +1,4 @@
+
 $('.home_slider .owl-carousel, .about_us_slider .owl-carousel, .contacts_slider .owl-carousel').owlCarousel({
     loop:false,
     nav:true,
