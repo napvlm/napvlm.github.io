@@ -572,7 +572,7 @@ video {
       .about_us_slider .owl-carousel .item .description .text,
       .contacts_slider .owl-carousel .item .description .text {
         font-size: 18px;
-        font-family: MuseoSansCyrl300;
+        font-family: 'Neucha';
         margin: 0;
         color: #000;
         margin-bottom: 60px;
@@ -631,7 +631,7 @@ video {
     .about_us .description p {
       margin: 0;
       font-size: 18px;
-      font-family: MuseoSansCyrl300;
+      font-family: 'Neucha';
       letter-spacing: 1px;
       margin-bottom: 32px;
       line-height: 30px; }
