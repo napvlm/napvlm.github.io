@@ -1,4 +1,3 @@
-
 $(window).on('load', function() { // makes sure the whole site is loaded 
   jQuery('#loader-wrapper').fadeOut("slow"); // will first fade out the loading animation 
   $('body').delay(350).css({'overflow':'visible'});
@@ -98,6 +97,15 @@ function loadYTApiScript() {
 
     loadYTApiScript();
 
+function loadYTApiScript() {
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    }
+
+    loadYTApiScript();
+
     $('.playVideoButton').on('click', function (e) {
         e.preventDefault();
         var video = $('#gbar-video');
@@ -136,4 +144,9 @@ function loadYTApiScript() {
         // $('.iframe-container').addClass('show');
         $('.iframe-container').removeClass('hide');
         $('.video_wrap').addClass('hide');
+        
+        setTimeout(function(){
+            $('.iframe-container').addClass('hide');
+            $('.video_wrap').removeClass('hide');
+        }, 124000);
     });
