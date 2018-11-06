@@ -1,7 +1,6 @@
 
 $(window).on('load', function() { // makes sure the whole site is loaded 
   jQuery('#loader-wrapper').fadeOut("slow"); // will first fade out the loading animation 
-  $('body').delay(350).css({'overflow':'visible'});
 })
 
 $('.home_slider .owl-carousel, .about_us_slider .owl-carousel, .contacts_slider .owl-carousel').owlCarousel({
