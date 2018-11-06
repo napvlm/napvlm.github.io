@@ -1,3 +1,10 @@
+// $('#loader-wrapper').addClass('loaded');
+
+$(document).ready(function(){
+    setTimeout(function(){
+        $('#loader-wrapper').addClass('loaded');
+    },4000);
+});
 
 $('.home_slider .owl-carousel, .about_us_slider .owl-carousel, .contacts_slider .owl-carousel').owlCarousel({
     loop:false,
