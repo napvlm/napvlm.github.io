@@ -15,11 +15,9 @@
   font-family: ProximaNovaBold;
   src: url("../fonts/ProximaNova-Bold.ttf"); }
 
-@font-face {
-  font-family: GlossBloom;
-  src: url("../fonts/GlossBloom.ttf"); }
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
-  @import url('https://fonts.googleapis.com/css?family=Poor+Story');
+@import url('https://fonts.googleapis.com/css?family=Poor+Story');
 
   html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -244,7 +242,7 @@ header {
 
 .primary {
   font-size: 125px;
-  font-family: GlossBloom;
+  font-family: 'Permanent Marker', cursive;
   margin: 0;
   color: white;
   text-transform: uppercase;
@@ -253,7 +251,7 @@ header {
 
 .sub {
   font-size: 30px;
-  font-family: GlossBloom;
+  font-family: 'Permanent Marker', cursive;
   line-height: normal;
   color: #fff;
 }
