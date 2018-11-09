@@ -22,8 +22,6 @@ $("#callback_form .close, #buy_one_click_form .close").on("click", function(){
     $("body").removeClass("no_scroll");
 });
 
-
-
 $(".callback_form").on("click", function(event){
     if($(event.target).hasClass("callback_form")) {
         $(".callback_form").addClass("notactive");
