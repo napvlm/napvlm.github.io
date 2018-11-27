@@ -1,22 +1,13 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Gotham Pro Regular";
-  src: url(../fonts/gothampro.ttf);
-}
-@font-face {
-  font-family: "Gotham Pro Black";
-  src: url(../fonts/gothampro-black.ttf);
-}
-@font-face {
-  font-family: "Gotham Pro Bold";
-  src: url(../fonts/gothampro-Bold.ttf);
-}
-@font-face {
-  font-family: "Gotham Pro Medium";
-  src: url(../fonts/gothampro-Medium.ttf);
-}
 html {
+  font-family: "Montserrat", sans-serif;
   font-size: 10px;
+}
+html h1 {
+  font-weight: bold;
+}
+html a {
+  font-weight: bold;
 }
 @media (min-width: 768px) {
   html {
@@ -154,7 +145,6 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 0.875rem;
-  font-family: "Gotham Pro Bold";
 }
 nav ul li a:hover {
   color: #fff;
@@ -441,7 +431,6 @@ header {
 
 .header__text {
   text-transform: uppercase;
-  font-family: "Gotham Pro Black";
   color: #fff;
   position: relative;
   top: 60%;
@@ -473,7 +462,6 @@ header {
 .greeting__text-primary {
   text-transform: uppercase;
   font-size: 3.75rem;
-  font-family: "Gotham Pro Black";
   background: -webkit-linear-gradient(30deg, #e9833b, #efcb19, #efcb19);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -488,12 +476,10 @@ header {
   margin-top: 5rem;
 }
 .greeting__text-sub p {
-  font-family: "Gotham Pro Regular";
   font-size: 1.5rem;
   text-decoration: none;
 }
 .greeting__link a {
-  font-family: "Gotham Pro Black";
   text-align: center;
   text-transform: uppercase;
   color: #d4436c;
@@ -549,14 +535,12 @@ header {
 }
 .portfolio__desc-primary {
   font-size: 2.25rem;
-  font-family: "Gotham Pro Black";
   color: #fff;
   text-transform: uppercase;
   text-align: center;
 }
 .portfolio__desc-sub {
   font-size: 0.8rem;
-  font-family: "Gotham Pro Regular";
   text-transform: uppercase;
   text-align: center;
   color: #000;
@@ -568,7 +552,6 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
-  font-family: "Gotham Pro Bold";
 }
 .portfolio__desc-link:hover {
   color: #e9833b;
@@ -588,7 +571,6 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.5rem;
-  font-family: "Gotham Pro Black";
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -600,7 +582,6 @@ header {
 
 .services__list {
   font-size: 1rem;
-  font-family: "Gotham Pro Regular";
   transition: all 0.3s;
 }
 @media (max-width: 992px) {
@@ -622,7 +603,6 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   color: #d4436c;
-  font-family: "Gotham Pro Bold";
 }
 .services__list li a:hover {
   color: #e9833b;
@@ -690,7 +670,6 @@ header {
 
 .managers__primary {
   font-size: 2.5rem;
-  font-family: "Gotham Pro Black";
   margin-top: 7.5rem;
   color: #fff;
   position: relative;
@@ -699,7 +678,6 @@ header {
 
 .managers__sub {
   font-size: 1rem;
-  font-family: "Gotham Pro Black";
   margin-top: 3.75rem;
   color: #d4436c;
   text-transform: uppercase;
@@ -718,7 +696,6 @@ header {
 
 .managers__contact__info {
   font-size: 1.125rem;
-  font-family: "Gotham Pro Medium";
   position: relative;
   z-index: 2;
 }
@@ -864,7 +841,6 @@ header {
 
 .cards__heading {
   font-size: 1rem;
-  font-family: "Gotham Pro Bold";
   margin: 20px;
   text-transform: uppercase;
   height: 5rem;
@@ -876,11 +852,9 @@ header {
 }
 .cards__views p {
   font-size: 0.75rem;
-  font-family: "Gotham Pro Bold";
 }
 
 .tupa_ssilka {
-  font-family: "Gotham Pro Black";
   text-align: center;
   text-transform: uppercase;
   color: #d4436c;
@@ -906,7 +880,6 @@ header {
 
 .clients__heading {
   font-size: 2.5rem;
-  font-family: "Gotham Pro Black";
   background: -webkit-linear-gradient(30deg, #8141a9, #d4436c, #d4436c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -973,24 +946,21 @@ footer {
   color: #d4436c;
   text-transform: uppercase;
   font-size: 1rem;
-  font-family: "Gotham Pro Black";
 }
 
 .footer__sub-01 {
   font-size: 1.125rem;
-  font-family: "Gotham Pro Bold";
+  font-weight: bold;
   color: #fff;
 }
 .footer__sub-02 {
   font-size: 1.5rem;
-  font-family: "Gotham Pro Black";
   color: #fff;
 }
 
 .zayavka {
   text-transform: uppercase;
   font-size: 1.5rem;
-  font-family: "Gotham Pro Black";
   background: -webkit-linear-gradient(30deg, #d4436c, #d4436c, #efcb19, #efcb19);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1007,7 +977,6 @@ footer {
 
 .footer__rights {
   font-size: 0.75rem;
-  font-family: "Gotham Pro Medium";
   text-align: center;
 }
 
@@ -1100,7 +1069,6 @@ footer {
 .modal-header .modal-title {
   text-transform: uppercase;
   font-size: 3.75rem;
-  font-family: "Gotham Pro Black";
   background: -webkit-linear-gradient(30deg, #d4436c, #8141a9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1112,12 +1080,6 @@ footer {
 
 .modal-body p {
   font-size: 1.5rem;
-}
-.modal-body .modal__contacts {
-  font-family: "Gotham Pro Black";
-}
-.modal-body .modal__address {
-  font-family: "Gotham Pro Bold";
 }
 
 .close {
@@ -1141,7 +1103,6 @@ footer {
   outline: none;
   width: 100%;
   color: #333;
-  font-family: "Gotham Pro Medium";
   font-size: 1rem;
 }
 
@@ -1159,7 +1120,6 @@ footer {
 .modal__link {
   font-size: 1.125rem;
   text-transform: uppercase;
-  font-family: "Gotham Pro Black";
   color: #d4436c;
   float: right;
   margin-top: 3%;
@@ -1207,7 +1167,6 @@ footer {
   text-transform: uppercase;
   font-size: 3.75rem;
   margin-bottom: 5rem;
-  font-family: "Gotham Pro Black";
   background: -webkit-linear-gradient(30deg, #d4436c, #efcb19, #efcb19, #efcb19);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1217,12 +1176,10 @@ footer {
   margin-top: 2rem;
 }
 .head-uslugi__text-sub p {
-  font-family: "Gotham Pro Regular";
   font-size: 1.5rem;
   text-decoration: none;
 }
 .head-uslugi__link a {
-  font-family: "Gotham Pro Black";
   text-align: center;
   text-transform: uppercase;
   color: #d4436c;
@@ -1244,7 +1201,6 @@ footer {
   text-transform: uppercase;
   font-size: 2.25rem;
   margin-bottom: 5rem;
-  font-family: "Gotham Pro Black";
   background: -webkit-linear-gradient(30deg, #8141a9, #d4436c, #d4436c, #d4436c, #d4436c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1252,7 +1208,6 @@ footer {
 
 .you-get__heading {
   font-size: 1.125rem;
-  font-family: "Gotham Pro Bold";
   text-transform: uppercase;
   margin-bottom: 3rem;
 }
@@ -1269,7 +1224,6 @@ footer {
 
 .pricing-link {
   color: #8141a9;
-  font-family: "Gotham Pro Bold";
   text-decoration: none;
 }
 .pricing-link:hover {
@@ -1291,7 +1245,6 @@ footer {
 .slider__list li {
   width: 160px;
   text-align: center;
-  font-family: "Gotham Pro Black";
 }
 @media (max-width: 992px) {
   .slider__list li {
@@ -1333,13 +1286,11 @@ svg {
 
 .slider__primary {
   font-size: 1.5rem;
-  font-family: "Gotham Pro Black";
   text-transform: uppercase;
 }
 
 .slider__sub {
   font-size: 1.125rem;
-  font-family: "Gotham Pro Regular";
 }
 
 .slider__text {
@@ -1348,7 +1299,6 @@ svg {
 
 .slider__link a {
   font-size: 1rem;
-  font-family: "Gotham Pro Black";
   color: #d4436c;
   text-decoration: none;
   text-transform: uppercase;
