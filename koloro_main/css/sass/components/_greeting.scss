@@ -7,7 +7,6 @@
 	&__text-primary {
 		text-transform: uppercase;
 		font-size: 3.75rem;
-		font-family: 'Gotham Pro Black';
 		background: -webkit-linear-gradient(30deg,$orange, $yellow, $yellow);
 		  -webkit-background-clip: text;
 		  -webkit-text-fill-color: transparent;
@@ -21,14 +20,12 @@
 		margin-bottom: 5rem;
 		margin-top: 5rem;
 		p {
-			font-family: 'Gotham Pro Regular';
 			font-size: 1.5rem;
 			text-decoration: none;
 		}	
 	}
 
 	&__link a {
-		font-family: 'Gotham Pro Black';
 		text-align: center;
 		text-transform: uppercase;
 		color: $purple;

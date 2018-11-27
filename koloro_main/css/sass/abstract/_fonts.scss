@@ -1,27 +1,37 @@
-// fonts 
-@font-face {
-    font-family: 'Gotham Pro Regular';
-    src: url(../fonts/gothampro.ttf);
-}
+// // fonts 
+// @font-face {
+//     font-family: 'Gotham Pro Regular';
+//     src: url(../fonts/gothampro.ttf);
+// }
 
-@font-face {
-    font-family: 'Gotham Pro Black';
-    src: url(../fonts/gothampro-black.ttf);
-}
+// @font-face {
+//     font-family: 'Gotham Pro Black';
+//     src: url(../fonts/gothampro-black.ttf);
+// }
 
-@font-face {
-    font-family: 'Gotham Pro Bold';
-    src: url(../fonts/gothampro-Bold.ttf);
-}
+// @font-face {
+//     font-family: 'Gotham Pro Bold';
+//     src: url(../fonts/gothampro-Bold.ttf);
+// }
 
-@font-face {
-    font-family: 'Gotham Pro Medium';
-    src: url(../fonts/gothampro-Medium.ttf);
-}
+// @font-face {
+//     font-family: 'Gotham Pro Medium';
+//     src: url(../fonts/gothampro-Medium.ttf);
+// }
 
 // fluid typography 
 
 html {
+  font-family: 'Montserrat', sans-serif;
+
+   h1 {
+    font-weight: bold;
+   }
+
+   a {
+    font-weight: bold;
+   }
+
   font-size: 10px;
   @media (min-width: 768px) {
     font-size: 16px;

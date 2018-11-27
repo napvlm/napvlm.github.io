@@ -23,7 +23,6 @@
 	.modal-title {
 		text-transform: uppercase;
 		font-size: 3.75rem;
-		font-family: 'Gotham Pro Black';
 		background: -webkit-linear-gradient(30deg,$purple, $violet);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent
@@ -39,13 +38,6 @@
 		font-size: 1.5rem;
 	}
 
-	.modal__contacts {
-		font-family: 'Gotham Pro Black';
-	}
-
-	.modal__address {
-		font-family: 'Gotham Pro Bold';
-	}
 }
 
 .close {
@@ -70,7 +62,6 @@
 	outline: none;
 	width: 100%;
 	color: #333;
-	font-family: 'Gotham Pro Medium';
 	font-size: 1rem;
 }
 
@@ -90,7 +81,6 @@
 .modal__link {
 	font-size: 1.125rem;
 	text-transform: uppercase;
-	font-family: 'Gotham Pro Black';
 	color: $purple;
 	float: right;
 	margin-top: 3%;

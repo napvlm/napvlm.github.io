@@ -16,7 +16,6 @@
 		  -webkit-background-clip: text;
 		  -webkit-text-fill-color: transparent;
 	font-size: 1.5rem;
-	font-family: 'Gotham Pro Black';
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 
@@ -27,7 +26,6 @@
 
 .services__list {
 	font-size: 1rem;
-	font-family: 'Gotham Pro Regular';
 	transition: all .3s;
 
 	@media (max-width: 992px) {
@@ -48,7 +46,6 @@
 			text-transform: uppercase;
 			text-decoration: none;
 			color: $purple;
-			font-family: 'Gotham Pro Bold';
 
 			&:hover {
 				color: $orange;

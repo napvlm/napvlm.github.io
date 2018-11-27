@@ -52,7 +52,6 @@
 
     &-primary {
 		font-size: 2.25rem;
-		font-family: 'Gotham Pro Black';
 		color: #fff;
 		text-transform: uppercase;
 		text-align: center;
@@ -60,7 +59,6 @@
 
     &-sub {
     	font-size: 0.8rem;
-    	font-family: 'Gotham Pro Regular';
     	text-transform: uppercase;
 		text-align: center;
 		color: #000;
@@ -73,7 +71,6 @@
 			text-transform: uppercase;
 			text-decoration: none;
 			color: #fff;
-			font-family: 'Gotham Pro Bold';
 
 			&:hover {
 				color: $orange;

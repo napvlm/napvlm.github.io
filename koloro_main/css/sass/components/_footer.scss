@@ -38,19 +38,19 @@ footer {
 	color: $purple;
 	text-transform: uppercase;
 	font-size: 1rem;
-	font-family: 'Gotham Pro Black';
+
 }
 
 .footer__sub {
 	&-01 {
 		font-size: 1.125rem;
-		font-family: 'Gotham Pro Bold';
+		font-weight: bold;
 		color: #fff;
 	}
 
 	&-02 {
 		font-size: 1.5rem;
-		font-family: 'Gotham Pro Black';
+	
 		color: #fff;
 	}
 }
@@ -58,7 +58,7 @@ footer {
 .zayavka {
 	text-transform: uppercase;
 	font-size: 1.5rem;
-	font-family: 'Gotham Pro Black';
+
 	background: -webkit-linear-gradient(30deg,$purple, $purple, $yellow,$yellow);
 	  -webkit-background-clip: text;
 	  -webkit-text-fill-color: transparent;
@@ -75,7 +75,6 @@ footer {
 
 .footer__rights {
 	font-size: 0.75rem;
-	font-family: 'Gotham Pro Medium';
 	text-align: center;
 }
 
