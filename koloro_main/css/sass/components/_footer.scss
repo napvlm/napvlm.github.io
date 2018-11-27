@@ -1,0 +1,147 @@
+.social__icons {
+	color: #fff;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: start;
+
+	i {
+		margin-right: 1.5rem;
+	}
+	
+	@media (max-width: 992px) {
+		display: flex;
+		justify-content: center;
+
+		i {
+			margin: 1rem;
+		}
+	}
+
+}
+
+.social {
+	padding-top: 26px;
+}
+
+footer {
+	background-color: #1c1c20;
+    border-bottom: 5px solid #a44699;
+    border-image: linear-gradient(to right, #8141a9 0%, #d6456a 50%, #f0cf16 100%);
+    border-image-slice: 1;
+
+    @media (max-width: 992px) {
+    	text-align: center;
+    }
+}
+
+.footer__primary {
+	color: $purple;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-family: 'Gotham Pro Black';
+}
+
+.footer__sub {
+	&-01 {
+		font-size: 1.125rem;
+		font-family: 'Gotham Pro Bold';
+		color: #fff;
+	}
+
+	&-02 {
+		font-size: 1.5rem;
+		font-family: 'Gotham Pro Black';
+		color: #fff;
+	}
+}
+
+.zayavka {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-family: 'Gotham Pro Black';
+	background: -webkit-linear-gradient(30deg,$purple, $purple, $yellow,$yellow);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+}
+
+.zayavka__link,
+.zayavka__link:link {
+	text-decoration: none;
+	
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.footer__rights {
+	font-size: 0.75rem;
+	font-family: 'Gotham Pro Medium';
+	text-align: center;
+}
+
+.footer__row {
+	padding-top: 4.75rem;
+	padding-bottom: 4.75rem;
+	
+	@media (min-width: 768px) {
+    	margin-bottom: 0;
+    }
+}
+
+.logo-footer {
+	padding-bottom: 10%;
+}
+
+
+
+// dots animation
+.footer-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-bottom: 3px;
+  background: $purple;
+}
+
+.footer-dot-2 {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-bottom: 3px;
+  background: $purple;
+}
+
+.footer-dot-3 {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-bottom: 3px;
+  background: $purple;
+}
+
+.footer-dots-animation:hover .footer-dot {
+    animation: wave 0.9s linear;   
+}
+
+.footer-dots-animation:hover .footer-dot-2 {
+    animation: wave 1.2s linear;   
+}
+
+.footer-dots-animation:hover .footer-dot-3 {
+    animation: wave 1.5s linear;   
+}
+
+@keyframes wave {
+  0%, 60%, 100% {
+    transform: initial;
+  }
+  30% {
+    transform: translateY(-8px);
+  }
+}

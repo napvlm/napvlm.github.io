@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>KOLORO - Брендинговое агенство</title>
+  </head>
+  <body>
+  
+<!-- Front-end part made by napvlm (https://github.com/napvlm)
+  <br>
+     For any questions feel free to reach out:
+  <br>
+     hello@ruslananisimov.com 
+     ================================================================== -->
+  
+<!-- <div class="preloader" id="preloader">
+      <div class="cssload-thecube">
+        <div class="cssload-cube cssload-c1"></div>
+        <div class="cssload-cube cssload-c2"></div>
+        <div class="cssload-cube cssload-c4"></div>
+        <div class="cssload-cube cssload-c3"></div>
+      </div>
+    </div> -->
+  <!-- HEADER -->
+    <header>
+       <!-- NAVBAR -->
+        <nav class="mynav">
+            <div class="container">
+                <input type="checkbox" id="nav" class="hidden">
+                <label for="nav" class="nav-btn">
+                      <i></i>
+                      <i></i>
+                      <i></i>
+                </label>
+                <div class="logo">
+                      <a href="index.html"><img src="media/logo.png" alt="logo" class="img-fluid"></a>
+                </div>
+                <div class="nav-wrapper">
+                      <ul>
+                            <li><a href="#">работа</a></li>
+                            <li><a href="service.html">услуги</a></li>
+                            <li><a href="#">блог</a></li>
+                            <li><a href="#">о нас</a></li>
+                            <li data-toggle="modal" data-target="#contactsModal"><a href="#">контакты</a></li>
+                            <li data-toggle="modal" data-target="#zayavkaModal" class="dots-animation"><a href="#">
+                                <span class="dot"></span><span class="dot-2"></span><span class="dot-3"></span>оставить заявку</a></li>
+                            <li class="header-phone-ico"><a href="#"><i class="fas fa-phone"></i></a></li>
+                      </ul>
+                </div>
+            </div>
+        </nav>
+      <!-- END NAVBAR -->
+    
+      <!-- CONTACTS MODAL -->
+      <!-- Modal -->
+        <div class="modal fade" id="contactsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                  • • •
+                  <br>
+                  Котнтакты
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span>&#10005;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <p class="modal__contacts">
+                    <i class="far fa-envelope"></i> hi@koloro.ua
+                  </p>
+                  <p class="modal__contacts">
+                    <i class="fas fa-phone-volume" style="transform: rotate(-40deg);"></i> +38 (044) 223 51 20
+                  </p>
+                  <p class="modal__address">
+                    <i class="fas fa-map-marker-alt"></i> ул. Трёхсвятительская 5/1-А, офис 201, 2-й этаж
+                  </p>
+                  <p class="modal__address">
+                    <i class="fas fa-map-marker-alt"></i> ул. Дорогожицкая 3 UNIT City, Здание Chasopys
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- END CONTACTS MODAL -->
+
+      <!-- ОСТАВИТЬ ЗАЯВКУ MODAL -->
+        <div class="modal fade" id="zayavkaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                • • •
+                <br>
+                Оставить заявку</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&#10005;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <input type="name" placeholder="Имя" required id="input__contacts" >
+                    <br>
+                    <input type="tel" placeholder="Телефон" required onkeypress="return isNumberKey(event)" id="input__contacts" >
+                    <br>
+                    <input type="email" placeholder="E-mail" required id="input__contacts" >
+                    <br>
+                    <label for="fileInput" class="attach">
+                     <i class="fas fa-paperclip"></i> прикрепить файл
+                    </label>
+                    <input type="file" style="display: none"  id="fileInput" />
+                  </div>
+                  <div class="col-lg-6">
+                    <!-- <label for="textarea">Ваша идея</label>
+                    <textarea rows="5" cols="40" placeholder="Я хотел бы ..."></textarea> -->
+                    <div class="main-form__textarea-wrapper">
+                     <textarea placeholder="Ваша идея" name="comment" id="area" class="main-form__textarea "></textarea>
+                      </div>
+                    <br>
+                    <a href="#" class="modal__link">• • • отправить</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- END ОСТАВИТЬ ЗАЯВКУ MODAL -->
+
+    <div class="container">
+      <div class="header__wrap">
+            <div class="row header">
+                <div class="col">
+                  <div class="header__text">
+                      <div class="dots">
+                        • • •
+                      </div>
+                      <div class="heading">
+                        <h1>KOLORO <br>
+                            BRAND <br>
+                            AGENCY</h1>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>  
+    </header>
+    <!-- END HEADER -->
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section id="greeting">
+      <div class="container">
+        <div class="row fadein">
+          <div class="col">
+            <div class="greeting">
+              <h1 class="greeting__text-primary ">
+                <p class="greeting__dots">• • •</p>
+                <br>
+                королевские <br>
+                бренды
+              </h1>
+              <p class="greeting__text-sub ">
+                Наши услуги ориентированы на лидеров, либо желающих ими стать. <br>
+                Ежегодная выручка от продаж брендов, <strong>созданных KOLORO</strong>, составляет <br>
+                более 1 миллиарда долларов. Что превышает годовые бюджеты некоторых стран мира!
+              </p>
+              <p class="greeting__link ">
+                <a href="#">
+                  • • • 
+                  <br>
+                  подробнее
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- end #greeting -->
+
+    <section id="portfolio">
+      <div class="portfolio fadein">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12 portfolio__col">
+            <img src="media/sirok.png" class="portfolio__item">
+            <div class="portfolio__desc">
+              <h3 class="portfolio__desc-primary">
+                  • • • 
+                  <br>
+                  нежные сырки
+                  <br>
+                  ГЛОБИНО
+              </h3>
+              <p class="portfolio__desc-sub">
+                • дизайн упаковки, позиционирование,
+                <br>
+                создание зонтичного бренда •
+                <br><br><br><br>
+                <a href="#" class="portfolio__desc-link">• • •  посмотреть</a>
+              </p>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 portfolio__col">
+            <img src="media/sosiski.png" class="portfolio__item">
+            <div class="portfolio__desc">
+              <h3 class="portfolio__desc-primary">
+                  • • • 
+                  <br>
+                  нежные сырки
+                  <br>
+                  ГЛОБИНО
+              </h3>
+              <p class="portfolio__desc-sub">
+                • дизайн упаковки, позиционирование,
+                <br>
+                создание зонтичного бренда •
+                <br><br><br><br>
+                <a href="#" class="portfolio__desc-link">• • •  посмотреть</a>
+              </p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12 portfolio__col">
+            <img src="media/sosiski1.png" class="portfolio__item">
+            <div class="portfolio__desc">
+              <h3 class="portfolio__desc-primary">
+                  • • • 
+                  <br>
+                  нежные сырки
+                  <br>
+                  ГЛОБИНО
+              </h3>
+              <p class="portfolio__desc-sub">
+                • дизайн упаковки, позиционирование,
+                <br>
+                создание зонтичного бренда •
+                <br><br><br><br>
+                <a href="#" class="portfolio__desc-link">• • •  посмотреть</a>
+              </p>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 portfolio__col">
+            <img src="media/sirok1.png" class="portfolio__item">
+            <div class="portfolio__desc">
+              <h3 class="portfolio__desc-primary">
+                  • • • 
+                  <br>
+                  нежные сырки
+                  <br>
+                  ГЛОБИНО
+              </h3>
+              <p class="portfolio__desc-sub">
+                • дизайн упаковки, позиционирование,
+                <br>
+                создание зонтичного бренда •
+                <br><br><br><br>
+                <a href="#" class="portfolio__desc-link">• • •  посмотреть</a>
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- end #portfolio -->
+
+    <section id="services">
+      <div class="container services__custom__container">
+        <div class="row services__wrap fadein">
+          <div class="col-lg-3 col-md-12 col-sm-12 services__item">
+            <h3 class="services__heading ">
+              • • •
+              <br>
+              стратегия
+            </h3>
+            
+            <ul class="list-unstyled services__list  ">
+              <li>Аудит бренда</li>
+              <li>Позиционирование</li>
+              <li>Бренд-платформа</li>
+              <li>Нейминг</li>
+              <li>Легенда бренда</li>
+              <li>Сопровождение бренда</li>
+            </ul>
+    
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 services__item">
+            <h3 class="services__heading">
+              • • •
+              <br>
+              дизайн
+            </h3>
+
+            <ul class="list-unstyled services__list ">
+              <li>Логотип и логобук</li>
+              <li>Фирменный стиль</li>
+              <li>Брендбук</li>
+              <li>Веб-дизайн</li>
+              <li>UX/UI</li>
+              <li>Дизайн-сопровождение</li>
+            </ul>
+    
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 services__item">
+            <h3 class="services__heading">
+              • • •
+              <br>
+              разработка
+            </h3>
+            
+            <ul class="list-unstyled services__list ">
+              <li>Аудит бренда</li>
+              <li>Позиционирование</li>
+              <li>Бренд-платформа</li>
+              <li>Нейминг</li>
+              <li>Легенда бренда</li>
+              <li>Сопровождение бренда</li>
+            </ul>
+    
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 services__item">
+            <h3 class="services__heading ">
+              • • •
+              <br>
+              продвижение
+            </h3>
+            
+            <ul class="list-unstyled services__list ">
+              <li>Запуск бренда</li>
+              <li>Креативная концепция</li>
+              <li>Digital-активации и SMM</li>
+              <li>Бренд-контент</li>
+              <li>Сопровождение</li>
+              <li class="uslugi"><a href="#">• • •  Все услуги</a></li>
+            </ul>
+    
+          </div>
+        </div>
+      </div>
+    </section> <!-- end #services -->
+
+    <section id="managers">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-0 col-md-0 managers__photo">
+            <img src="media/managers_o.png" class="img-fluid managers__photo-bg">
+            <img src="media/p-1.png" alt="менеджер" class="img-fluid managers__photo-avatar">
+          </div> <!-- end .managers__photo -->
+          <div class="col-lg-6 col-md-12 col-md-12">
+
+            <div class="managers__text">
+
+                  <!-- <img src="media/managers_o.png" class="img-fluid managers__text-bg-mobile"> -->
+                  <h3 class="managers__primary  fadein">
+                    • • •
+                    <br>
+                    НАШИ МЕНЕДЖЕРЫ 
+                    <br>
+                    с удовольствием
+                    <br>
+                    ПОМОГУТ вам
+                    <br>
+                  </h3>
+                  <p class="managers__sub  fadein">
+                    <a href="#" class="project-dots-animation">
+                    <span class="project-dot"></span><span class="project-dot-2"></span><span class="project-dot-3"></span>
+                    рассчитать проект</a>
+                  </p>
+
+                  <div class="row managers__contact__info fadein">
+                    <div class="col-xs-6 managers__contact__info-phone ">
+                      <p>
+                        <i class="fas fa-phone-volume" style="transform: rotate(-40deg);"></i> <!-- rotating phone icon -->
+                        +38 (099) 600 22 14 
+                        <br>
+                        &nbsp;&nbsp;&nbsp;+38 (044) 223 51 20 <!-- nbsp code is for spacing -->
+                      </p>
+                  </div>
+                  <div class="col-xs-6 managers__contact__info-email  fadein">
+                    <p>
+                      <i class="far fa-envelope"></i> <a href="mailto:pyvovar@koloro.ua?Subject=Start%20project" target="_top" class="mailto-link">pyvovar@koloro.ua</a>
+                    </p>
+                  </div> 
+                </div>
+
+          </div> <!-- end .managers__text -->
+        </div> <!-- end .col-lg-6 ... -->
+      </div> <!-- end .row -->
+    </section> <!-- end #managers -->
+
+    <section id="cards">
+      <div class="container cards__container">
+        <div class="row cards__row">
+
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="cards__item-01">
+              <div class="cards__bg-01"></div>
+              <div class="cards__heading">
+                Нейминг шоколада: 10 примеров, 5 советов и 4 ошибки  • • •
+              </div> <!-- end .cards__heading -->
+              <div class="cards__views d-flex justify-content-between">
+                <p class="text-muted"><i class="fas fa-eye"></i>&nbsp;1337 просмотров</p>
+                <p class="text-muted">12.11.18</p>
+              </div> <!-- end .cards__views -->
+            </div>
+          </div> <!-- end .col-lg-4 ... -->
+
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="cards__item-02">
+              <div class="cards__bg-02"></div>
+              <div class="cards__heading">
+                Тенденции на рынке производства соков  • • •
+              </div> <!-- end .cards__heading -->
+              <div class="cards__views d-flex justify-content-between">
+                <p class="text-muted"><i class="fas fa-eye"></i>&nbsp;1337 просмотров</p>
+                <p class="text-muted">12.11.18</p>
+              </div> <!-- end .cards__views -->
+            </div>
+          </div> <!-- end .col-lg-4 ... -->
+
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="cards__item-03">
+              <div class="cards__bg-03"></div>
+              <div class="cards__heading">
+                Тенденции на рынке производства соков  • • •
+              </div> <!-- end .cards__heading -->
+              <div class="cards__views d-flex justify-content-between">
+                <p class="text-muted"><i class="fas fa-eye"></i>&nbsp;1337 просмотров</p>
+                <p class="text-muted">12.11.18</p>
+              </div> <!-- end .cards__views -->
+            </div>
+          </div> <!-- end .col-lg-4 ... -->
+        </div> <!-- end .cards__row -->
+        <div class="row">
+          <div class="col d-flex justify-content-end  cards__link">
+            <a href="#" class="tupa_ssilka">• • •  больше новостей</a>
+          </div>
+        </div>
+      </div> <!-- end .cards__container -->
+    </section> <!-- end #cards -->
+
+    <section id="clients">
+      <div class="container clients__container">
+        <div class="row">
+          <div class="col">
+             <h1 class="clients__heading fadein">
+                • • • <br>
+                нам <br>
+                доверяют
+                </h1>
+          </div>
+        </div>
+       <div class="row clients__row">
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-around clients__col">
+              <img src="media/globino.png" class="clients__item">
+              <img src="media/myasnoy-logo.png" style="max-height: 1.625rem;" class="clients__item">
+            </div> <!-- end .col-lg-6 .. -->
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-around clients__col">
+              <img src="media/globino.png" class="clients__item">
+              <img src="media/myasnoy-logo.png" style="max-height: 1.625rem;" class="clients__item">
+            </div>
+        </div> <!-- end .row -->
+
+        <div class="row clients__row ">
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-around clients__col">
+              <img src="media/globino.png" class="clients__item">
+              <img src="media/myasnoy-logo.png" style="max-height: 1.625rem;" class="clients__item">
+            </div> <!-- end .col-lg-6 .. -->
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-around clients__col">
+              <img src="media/globino.png" class="clients__item">
+              <img src="media/myasnoy-logo.png" style="max-height: 1.625rem;" class="clients__item">
+            </div>
+        </div> <!-- end .row -->
+
+        <div class="row clients__row">
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-around clients__col">
+              <img src="media/globino.png" class="clients__item">
+              <img src="media/myasnoy-logo.png" style="max-height: 1.625rem;" class="clients__item">
+            </div> <!-- end .col-lg-6 .. -->
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-around clients__col">
+              <img src="media/globino.png" class="clients__item">
+              <img src="media/myasnoy-logo.png" style="max-height: 1.625rem;" class="clients__item">
+            </div>
+        </div> <!-- end .row -->
+
+      </div> <!-- .container -->
+    </section>
+  </main>
+  <!-- END MAIN CONTENT -->
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
+        <div class="col-lg-3 col-md-12 col-sm-12 order-1">
+          <a href="#"><img src="media/koloro-logo-footer.png" alt="logo" class="img-fluid logo-footer"></a>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 order-4">
+          <p class="footer__primary">
+            • • • <br>
+             адрес
+          </p>
+          <p class="footer__sub-01">
+            ул. Трёхсвятительская 5/1-А, <br>
+            офис 201, 2-й этаж 
+          </p>
+          <p class="footer__sub-01">
+            ул.Дорогожицкая 3 UNIT City, <br>
+            Здание Chasopys 
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 order-3">
+          <p class="footer__primary">
+            • • • <br>
+             e-mail
+          </p>
+          <p class="footer__sub-02">
+            hi@koloro.ua
+          </p>
+          <p class="footer__primary">
+            • • • <br>
+             телефон
+          </p>
+          <p class="footer__sub-02">
+            +38 (044) 223 51 20
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 order-2">
+          <a href="#" class="zayavka__link"><h3 class="zayavka footer-dots-animation">
+            оставить <br>
+            заявку  
+            <br>
+             <span class="footer-dot"></span><span class="footer-dot-2"></span><span class="footer-dot-3">
+          </h3>
+          </a>
+          <p class="footer__primary social">
+            • • • <br>
+             мы в сетях <br>
+          </p>
+          <div class="social__icons">
+            <i class="fab fa-facebook-f"></i><i class="fab fa-instagram"></i><i class="fab fa-google"></i>
+          </div>
+        </div>
+      </div> <!-- end .row --> 
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+            <div class="footer__rights">
+              <p class="text-muted">
+                Брендинговое агентство KOLORO - <br>
+                лидер в сфере бренд дизайна. 
+              </p>
+              <p class="text-muted">
+                Все права защищены. 
+              </p>
+            </div>
+        </div>
+      </div>
+    </div> <!-- end .container -->
+  </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <!-- Animation libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js" defer></script>
+
+
+    <!-- Local -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

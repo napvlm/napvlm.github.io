@@ -1,0 +1,41 @@
+.head-uslugi {
+	margin-top: 12.5rem;
+	margin-bottom: 12.5rem;
+
+
+	&__text-primary {
+		text-transform: uppercase;
+		font-size: 3.75rem;
+		margin-bottom: 5rem;
+		font-family: 'Gotham Pro Black';
+		background: -webkit-linear-gradient(30deg,$purple, $yellow, $yellow, $yellow);
+		  -webkit-background-clip: text;
+		  -webkit-text-fill-color: transparent;
+	}
+	
+	&__text-sub {
+		margin-bottom: 2rem;
+		margin-top: 2rem;
+		p {
+			font-family: 'Gotham Pro Regular';
+			font-size: 1.5rem;
+			text-decoration: none;
+		}	
+	}
+
+	&__link a {
+		font-family: 'Gotham Pro Black';
+		text-align: center;
+		text-transform: uppercase;
+		color: $purple;
+		text-decoration: none;
+		font-size: 1rem;
+		transition: all .3s ease-in;
+	}
+
+	&__link a:hover {
+		color: $orange;
+		cursor: pointer;
+		text-decoration: none;
+	}
+}

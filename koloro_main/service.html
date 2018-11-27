@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Услуга</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+</head>
+<body>
+	
+	<!-- <div class="preloader">
+	</div> -->
+
+	<!-- NAVBAR -->
+        <nav class="mynav">
+            <div class="container">
+                <input type="checkbox" id="nav" class="hidden">
+                <label for="nav" class="nav-btn">
+                      <i></i>
+                      <i></i>
+                      <i></i>
+                </label>
+                <div class="logo">
+                      <a href="index.html"><img src="media/logo.png" alt="logo" class="img-fluid"></a>
+                </div>
+                <div class="nav-wrapper">
+                      <ul>
+                            <li><a href="#">работа</a></li>
+                            <li><a href="service.html">услуги</a></li>
+                            <li><a href="#">блог</a></li>
+                            <li><a href="#">о нас</a></li>
+                            <li data-toggle="modal" data-target="#contactsModal"><a href="#">контакты</a></li>
+                            <li data-toggle="modal" data-target="#zayavkaModal" class="dots-animation"><a href="#">
+                            <span class="dot"></span><span class="dot-2"></span><span class="dot-3"></span>
+                        оставить заявку</a></li>
+                            <li class="header-phone-ico"><a href="#"><i class="fas fa-phone"></i></a></li>
+                      </ul>
+                </div>
+            </div>
+        </nav>
+      <!-- END NAVBAR -->
+
+      <!-- CONTACTS MODAL -->
+      <!-- Modal -->
+        <div class="modal fade" id="contactsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                  • • •
+                  <br>
+                  Котнтакты
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span>&#10005;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <p class="modal__contacts">
+                    <i class="far fa-envelope"></i> hi@koloro.ua
+                  </p>
+                  <p class="modal__contacts">
+                    <i class="fas fa-phone-volume" style="transform: rotate(-40deg);"></i> +38 (044) 223 51 20
+                  </p>
+                  <p class="modal__address">
+                    <i class="fas fa-map-marker-alt"></i> ул. Трёхсвятительская 5/1-А, офис 201, 2-й этаж
+                  </p>
+                  <p class="modal__address">
+                    <i class="fas fa-map-marker-alt"></i> ул. Дорогожицкая 3 UNIT City, Здание Chasopys
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- END CONTACTS MODAL -->
+
+      <!-- ОСТАВИТЬ ЗАЯВКУ MODAL -->
+        <div class="modal fade" id="zayavkaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                • • •
+                <br>
+                Оставить заявку</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&#10005;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <input type="name" placeholder="Имя" required id="input__contacts" >
+                    <br>
+                    <input type="tel" placeholder="Телефон" required onkeypress="return isNumberKey(event)" id="input__contacts" >
+                    <br>
+                    <input type="email" placeholder="E-mail" required id="input__contacts" >
+                    <br>
+                    <label for="fileInput" class="attach">
+                     <i class="fas fa-paperclip"></i> прикрепить файл
+                    </label>
+                    <input type="file" style="display: none"  id="fileInput" />
+                  </div>
+                  <div class="col-lg-6">
+                    <!-- <label for="textarea">Ваша идея</label>
+                    <textarea rows="5" cols="40" placeholder="Я хотел бы ..."></textarea> -->
+                    <div class="main-form__textarea-wrapper">
+                     <textarea placeholder="Ваша идея" name="comment" id="area" class="main-form__textarea "></textarea>
+                      </div>
+                    <br>
+                    <a href="#" class="modal__link">• • • отправить</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- END ОСТАВИТЬ ЗАЯВКУ MODAL -->
+
+      <main>
+      	 <section id="head">
+	      <div class="container">
+	        <div class="row ">
+	          <div class="col">
+	            <div class="head-uslugi fadein">
+	              <h1 class="head-uslugi__text-primary ">
+	                <p class="head-uslugi__dots">• • •</p>
+	                брендинг
+	              </h1>
+	              <p class="head-uslugi__text-sub ">
+	                Это процесс создания и развития бренда.  <br>
+	                Он включает все этапы: от создания продукта – до продвижения и рекламы. Брендинг подразумевает:
+	              </p>
+	                <ul>
+						<li>Работу над усовершенствованием продукта;</li>
+						<li>Повышение престижности бренда;</li>
+						<li>Соответствия бренда требованиям рынка.</li>
+	                </ul>
+	              	<p class="head-uslugi__text-sub">
+	                Брендинг призван <strong>создавать спрос</strong> потребителей на товары и услуги. <br>
+	                Основные цели брендинга – <strong>популяризация компании</strong> или бренда, повышения узнаваемости бренда, <strong>рост продаж</strong> и прибыли. Если работать с брендом правильно – потребители заплатят больше, потому что посчитают бренд достойным.
+	              </p>
+	              <img src="media/pineapple.png" class="img-fluid" style="margin: 0 auto; width: 100%;">
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </section>
+		
+		<section id="you-get">
+	      <div class="container you-get__custom__container fadein">
+	      	<div class="row">
+	      		<div class="col">
+	      			<h1 class="primary">
+	      				ВЫ ПОЛУЧИТЕ  • • •
+	      			</h1>
+	      		</div>
+	      	</div>
+	        <div class="row you-get__wrap">
+	          <div class="col-lg-4 col-md-12 col-sm-12 you-get__item">
+	            <h3 class="you-get__heading ">
+	              • • •
+	              <br>
+	              гарантия
+	              <br>
+	              унискальности
+	            </h3>
+	            
+	            <h3 class="you-get__heading ">
+	               • • •
+	              <br>
+	              гарантия
+	              <br>
+	              унискальности
+	            </h3>
+	    
+	          </div>
+	          <div class="col-lg-4 col-md-12 col-sm-12 you-get__item">
+	            <h3 class="you-get__heading">
+	               • • •
+	              <br>
+	              гарантия
+	              <br>
+	              унискальности
+	            </h3>
+
+	           <h3 class="you-get__heading ">
+	               • • •
+	              <br>
+	              гарантия
+	              <br>
+	              унискальности
+	            </h3>
+	    
+	          </div>
+	          <div class="col-lg-4 col-md-12 col-sm-12 you-get__item">
+	            <h3 class="you-get__heading">
+	               • • •
+	              <br>
+	              гарантия
+	              <br>
+	              унискальности
+	            </h3>
+	            
+	            <h3 class="you-get__heading ">
+	               • • •
+	              <br>
+	              гарантия
+	              <br>
+	              унискальности
+	            </h3>
+	    
+	          </div>
+	        </div>
+	      </div>
+	    </section> <!-- end #services -->
+
+	    <section id="slider">
+	    	<div class="container">
+	    		<div class="row slider__item">
+	    			<div class="col">
+	    				<h1 class="primary">
+							этапы  • • •
+						</h1>
+	    			</div>
+	    		</div>
+	    		<div class="row">
+	    			<div class="col">
+	    				<ul class="list-unstyled slider__list">
+	    					<li onclick="currentSlide(1)" class="control">1</li>
+	    					<svg height="2">
+  								<line x1="0" x2="60" style="stroke:rgb(180,180,180);stroke-width:2" />
+  									Sorry, your browser does not support inline SVG.
+							</svg>
+							
+	    					<li onclick="currentSlide(2)" class="control">2</li>
+	    					<svg height="2">
+  								<line x1="0" x2="60" style="stroke:rgb(180,180,180);stroke-width:2" />
+  									Sorry, your browser does not support inline SVG.
+							</svg>
+							
+	    					<li onclick="currentSlide(3)" class="control">3</li>
+	    					<svg height="2">
+  								<line x1="0" x2="60" style="stroke:rgb(180,180,180);stroke-width:2" />
+  									Sorry, your browser does not support inline SVG.
+							</svg>
+							
+	    					<li onclick="currentSlide(4)" class="control">4</li>
+	    					<svg height="2">
+  								<line x1="0" x2="60" style="stroke:rgb(180,180,180);stroke-width:2" />
+  									Sorry, your browser does not support inline SVG.
+							</svg>
+							
+	    					<li onclick="currentSlide(5)" class="control">5</li>
+	    					<svg height="2">
+  								<line x1="0" x2="60" style="stroke:rgb(180,180,180);stroke-width:2" />
+  									Sorry, your browser does not support inline SVG.
+							</svg>
+							
+	    					<li onclick="currentSlide(6)" class="control">6</li>
+	    					<svg height="2">
+  								<line x1="0" x2="60" style="stroke:rgb(180,180,180);stroke-width:2" />
+  									Sorry, your browser does not support inline SVG.
+							</svg>
+							
+	    					<li onclick="currentSlide(7)" class="control">7</li>
+	    					<svg height="2">
+  								<line x1="0" x2="60" style="stroke:rgb(180,180,180);stroke-width:2" />
+  									Sorry, your browser does not support inline SVG.
+							</svg>
+							
+	    					<li onclick="currentSlide(8)" class="control">8</li>
+	    					<svg height="2">
+  								<line x1="0" x2="60" style="stroke:rgb(180,180,180);stroke-width:2" />
+  									Sorry, your browser does not support inline SVG.
+							</svg>
+							
+	    					<li onclick="currentSlide(9)" class="control">9</li>
+	    				</ul>
+	    			</div> <!-- end .col -->
+	    		</div> <!-- .row -->
+	    		<div class="slider__wrap">
+		    		<div class="row slider__text slide fade-transition">
+		    			<div class="col-lg-6 ">
+		    				<h3 class="slider__primary">
+		    					Анализ рынка, конкурентов и <br>
+		    					потенциальной ЦА
+		    				</h3>
+		    				<br>
+		    				<p class="slider__sub">
+								На данном этапе необходимо выявить актуальную потребность целевой аудитории и создать на нее спрос. Для этого необходимо провести анализ последних тенденций рынка. Так разработка торговой марки будет иметь под собой аналитическую основу. <br>
+								Смотрите <a href="#" class="pricing-link">пример здесь</a>.
+		    				</p>
+		    				<br>
+		    				<p class="slider__link slider-dots-animation">
+		    					<a href="#"><span class="slider-dot"></span><span class="slider-dot-2"></span><span class="slider-dot-3"></span>получить консультацию</a>
+		    				</p>
+		    			</div>
+		    			<div class="col-lg-6 slider__img">
+		    				<img src="media/slider-example.png" class="img-fluid">
+		    			</div>
+		    		</div>
+		    		<div class="row slider__text slide fade-transition">
+		    			<div class="col-lg-6 ">
+		    				<h3 class="slider__primary">
+		    					sadasd
+		    				</h3>
+		    				<br>
+		    				<p class="slider__sub">
+								Нloeскую основу. <br>
+								Смотрите <a href="#" class="pricing-link">пример здесь</a>.
+		    				</p>
+		    				<br>
+		    				<p class="slider__link slider-dots-animation">
+		    					<a href="#"><span class="slider-dot"></span><span class="slider-dot-2"></span><span class="slider-dot-3"></span>получить консультацию</a>
+		    				</p>
+		    			</div>
+		    			<div class="col-lg-6 slider__img">
+		    				<img src="media/slider-example.png" class="img-fluid">
+		    			</div>
+		    		</div>
+		    		<div class="row slider__text slide fade-transition">
+		    			<div class="col-lg-6 ">
+		    				<h3 class="slider__primary">
+		    					Анализsкурентов и <br>
+		    					потенциальной ЦА
+		    				</h3>
+		    				<br>
+		    				<p class="slider__sub">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, suscipit, voluptatem earum inventore reprehenderit dolor adipisci exercitationem sapiente quibusdam at.<br>
+								Смотрите <a href="#" class="pricing-link">пример здесь</a>.
+		    				</p>
+		    				<br>
+		    				<p class="slider__link slider-dots-animation">
+		    					<a href="#"><span class="slider-dot"></span><span class="slider-dot-2"></span><span class="slider-dot-3"></span>получить консультацию</a>
+		    				</p>
+		    			</div>
+		    			<div class="col-lg-6 slider__img">
+		    				<img src="media/slider-example.png" class="img-fluid">
+		    			</div>
+		    		</div>
+		    		<div class="row slider__text slide fade-transition">
+		    			<div class="col-lg-6 ">
+		    				<h3 class="slider__primary">
+		    					Анализ рынка, конкурентов и <br>
+		    					потенциальной ЦА
+		    				</h3>
+		    				<br>
+		    				<p class="slider__sub">
+								На данном этапе необходимо выявить актуальную потребность целевой аудитории и создать на нее спрос. Для этого необходимо провести анализ последних тенденций рынка. Так разработка торговой марки будет иметь под собой аналитическую основу. <br>
+								Смотрите <a href="#" class="pricing-link">пример здесь</a>.
+		    				</p>
+		    				<br>
+		    				<p class="slider__link slider-dots-animation">
+		    					<a href="#"><span class="slider-dot"></span><span class="slider-dot-2"></span><span class="slider-dot-3"></span>получить консультацию</a>
+		    				</p>
+		    			</div>
+		    			<div class="col-lg-6 slider__img">
+		    				<img src="media/slider-example.png" class="img-fluid">
+		    			</div>
+		    		</div>
+		    		<div class="row slider__text slide fade-transition">
+		    			<div class="col-lg-6 ">
+		    				<h3 class="slider__primary">
+		    					sadasd
+		    				</h3>
+		    				<br>
+		    				<p class="slider__sub">
+								Нloeскую основу. <br>
+								Смотрите <a href="#" class="pricing-link">пример здесь</a>.
+		    				</p>
+		    				<br>
+		    				<p class="slider__link slider-dots-animation">
+		    					<a href="#"><span class="slider-dot"></span><span class="slider-dot-2"></span><span class="slider-dot-3"></span>получить консультацию</a>
+		    				</p>
+		    			</div>
+		    			<div class="col-lg-6 slider__img">
+		    				<img src="media/slider-example.png" class="img-fluid">
+		    			</div>
+		    		</div>
+		    		<div class="row slider__text slide fade-transition">
+		    			<div class="col-lg-6 ">
+		    				<h3 class="slider__primary">
+		    					Анализsкурентов и <br>
+		    					потенциальной ЦА
+		    				</h3>
+		    				<br>
+		    				<p class="slider__sub">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, suscipit, voluptatem earum inventore reprehenderit dolor adipisci exercitationem sapiente quibusdam at.<br>
+								Смотрите <a href="#" class="pricing-link">пример здесь</a>.
+		    				</p>
+		    				<br>
+		    				<p class="slider__link slider-dots-animation">
+		    					<a href="#"><span class="slider-dot"></span><span class="slider-dot-2"></span><span class="slider-dot-3"></span>получить консультацию</a>
+		    				</p>
+		    			</div>
+		    			<div class="col-lg-6 slider__img">
+		    				<img src="media/slider-example.png" class="img-fluid">
+		    			</div>
+		    		</div>
+		    		<div class="row slider__text slide fade-transition">
+		    			<div class="col-lg-6 ">
+		    				<h3 class="slider__primary">
+		    					Анализ рынка, конкурентов и <br>
+		    					потенциальной ЦА
+		    				</h3>
+		    				<br>
+		    				<p class="slider__sub">
+								На данном этапе необходимо выявить актуальную потребность целевой аудитории и создать на нее спрос. Для этого необходимо провести анализ последних тенденций рынка. Так разработка торговой марки будет иметь под собой аналитическую основу. <br>
+								Смотрите <a href="#" class="pricing-link">пример здесь</a>.
+		    				</p>
+		    				<br>
+		    				<p class="slider__link slider-dots-animation">
+		    					<a href="#"><span class="slider-dot"></span><span class="slider-dot-2"></span><span class="slider-dot-3"></span>получить консультацию</a>
+		    				</p>
+		    			</div>
+		    			<div class="col-lg-6 slider__img">
+		    				<img src="media/slider-example.png" class="img-fluid">
+		    			</div>
+		    		</div>
+		    		<div class="row slider__text slide fade-transition">
+		    			<div class="col-lg-6 ">
+		    				<h3 class="slider__primary">
+		    					sadasd
+		    				</h3>
+		    				<br>
+		    				<p class="slider__sub">
+								Нloeскую основу. <br>
+								Смотрите <a href="#" class="pricing-link">пример здесь</a>.
+		    				</p>
+		    				<br>
+		    				<p class="slider__link slider-dots-animation">
+		    					<a href="#"><span class="slider-dot"></span><span class="slider-dot-2"></span><span class="slider-dot-3"></span>получить консультацию</a>
+		    				</p>
+		    			</div>
+		    			<div class="col-lg-6 slider__img">
+		    				<img src="media/slider-example.png" class="img-fluid">
+		    			</div>
+		    		</div>
+		    		<div class="row slider__text slide fade-transition">
+		    			<div class="col-lg-6 ">
+		    				<h3 class="slider__primary">
+		    					Анализsкурентов и <br>
+		    					потенциальной ЦА
+		    				</h3>
+		    				<br>
+		    				<p class="slider__sub">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, suscipit, voluptatem earum inventore reprehenderit dolor adipisci exercitationem sapiente quibusdam at.<br>
+								Смотрите <a href="#" class="pricing-link">пример здесь</a>.
+		    				</p>
+		    				<br>
+		    				<p class="slider__link slider-dots-animation">
+		    					<a href="#"><span class="slider-dot"></span><span class="slider-dot-2"></span><span class="slider-dot-3"></span>получить консультацию</a>
+		    				</p>
+		    			</div>
+		    			<div class="col-lg-6 slider__img">
+		    				<img src="media/slider-example.png" class="img-fluid">
+		    			</div>
+		    		</div>
+	    		</div>
+
+	    </section>
+
+		
+		<section id="pricing">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h1 class="primary">
+							ценообразование  • • •
+						</h1>
+						<p class="head-uslugi__text-sub">
+							1. Разработка брендбука. Если разработка брендбука не требуется и будет достаточно 3 вариантов визуализаций фирменного стиля (плюс логотип в векторе) - стоимость брендинга будет существенно ниже.
+						</p>
+						<p class="head-uslugi__text-sub">
+							2. Коммерческие цели, которые ставит перед собой компания перед началом разработки бренда. Чем они амбициознее – тем выше стоимость брендинга.
+						</p>
+						<p class="head-uslugi__text-sub">
+							3. Конкуренция в сфере, для которой KOLORO будет разрабатывать бренд. Чем выше конкуренция, тем сложнее придумать интересное позиционирование.
+						</p>
+						<p class="head-uslugi__text-sub">
+							4. Если потребуется покупка исследования у сторонних компаний - стоимость брендинга будет выше.
+						</p>
+						<p class="head-uslugi__text-sub">
+							5. Общее количество элементов, которые входят в брендбук. Например, если помимо фирменного стиля нужен дизайн фасада здания - стоимость будет выше.
+						</p>
+						<p class="head-uslugi__text-sub">
+							С ценами на наши услуги Вы можете ознакомиться <a href="#" class="pricing-link">здесь</a>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+      	<section id="managers">
+		      <div class="container">
+		        <div class="row">
+		          <div class="col-lg-6 col-md-0 col-md-0 managers__photo">
+		            <img src="media/managers_o.png" class="img-fluid managers__photo-bg">
+		            <img src="media/p-1.png" alt="менеджер" class="img-fluid managers__photo-avatar">
+		          </div> <!-- end .managers__photo -->
+		          <div class="col-lg-6 col-md-12 col-md-12 fadein">
+
+		            <div class="managers__text">
+
+		                  <!-- <img src="media/managers_o.png" class="img-fluid managers__text-bg-mobile"> -->
+		                  <h3 class="managers__primary">
+		                    • • •
+		                    <br>
+		                    НАШИ МЕНЕДЖЕРЫ 
+		                    <br>
+		                    с удовольствием
+		                    <br>
+		                    ПОМОГУТ вам
+		                    <br>
+		                  </h3>
+		                  <p class="managers__sub">
+		                    <a href="#" class="project-dots-animation">
+		                    <span class="project-dot"></span><span class="project-dot-2"></span><span class="project-dot-3"></span>
+		                    рассчитать проект</a>
+		                  </p>
+
+		                  <div class="row managers__contact__info">
+		                    <div class="col-xs-6 managers__contact__info-phone ">
+		                      <p>
+		                        <i class="fas fa-phone-volume" style="transform: rotate(-40deg);"></i> <!-- rotating phone icon -->
+		                        +38 (099) 600 22 14 
+		                        <br>
+		                        &nbsp;&nbsp;&nbsp;+38 (044) 223 51 20 <!-- nbsp code is for spacing -->
+		                      </p>
+		                  </div>
+		                  <div class="col-xs-6 managers__contact__info-email">
+		                    <p>
+		                      <i class="far fa-envelope"></i> <a href="mailto:pyvovar@koloro.ua?Subject=Start%20project" target="_top" class="mailto-link">pyvovar@koloro.ua</a>
+		                    </p>
+		                  </div> 
+		                </div>
+
+		          </div> <!-- end .managers__text -->
+		        </div> <!-- end .col-lg-6 ... -->
+		      </div> <!-- end .row -->
+		    </section> <!-- end #managers -->
+      </main>
+	
+	<footer>
+	    <div class="container">
+	      <div class="row footer__row">
+	        <div class="col-lg-3 col-md-12 col-sm-12 order-1">
+	          <a href="#"><img src="media/koloro-logo-footer.png" alt="logo" class="img-fluid logo-footer"></a>
+	        </div>
+	        <div class="col-lg-3 col-md-12 col-sm-12 order-4">
+	          <p class="footer__primary">
+	            • • • <br>
+	             адрес
+	          </p>
+	          <p class="footer__sub-01">
+	            ул. Трёхсвятительская 5/1-А, <br>
+	            офис 201, 2-й этаж 
+	          </p>
+	          <p class="footer__sub-01">
+	            ул.Дорогожицкая 3 UNIT City, <br>
+	            Здание Chasopys 
+	          </p>
+	        </div>
+	        <div class="col-lg-3 col-md-12 col-sm-12 order-3">
+	          <p class="footer__primary">
+	            • • • <br>
+	             e-mail
+	          </p>
+	          <p class="footer__sub-02">
+	            hi@koloro.ua
+	          </p>
+	          <p class="footer__primary">
+	            • • • <br>
+	             телефон
+	          </p>
+	          <p class="footer__sub-02">
+	            +38 (044) 223 51 20
+	          </p>
+	        </div>
+	        <div class="col-lg-3 col-md-12 col-sm-12 order-2">
+	          <a href="#" class="zayavka__link"><h3 class="zayavka footer-dots-animation">
+	            оставить <br>
+	            заявку  
+	            <br>
+	             <span class="footer-dot"></span><span class="footer-dot-2"></span><span class="footer-dot-3">
+	          </h3>
+	          </a>
+	          <p class="footer__primary social">
+	            • • • <br>
+	             мы в сетях <br>
+	          </p>
+	          <div class="social__icons">
+	            <i class="fab fa-facebook-f"></i><i class="fab fa-instagram"></i><i class="fab fa-google"></i>
+	          </div>
+	        </div>
+	      </div> <!-- end .row --> 
+	      <div class="row">
+	        <div class="col d-flex justify-content-center">
+	            <div class="footer__rights">
+	              <p class="text-muted">
+	                Брендинговое агентство KOLORO - <br>
+	                лидер в сфере бренд дизайна. 
+	              </p>
+	              <p class="text-muted">
+	                Все права защищены. 
+	              </p>
+	            </div>
+	        </div>
+	      </div>
+	    </div> <!-- end .container -->
+	  </footer>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    
+    <!-- Preloader -->
+<!--     <script src="js/preloader.js" defer></script>
+ -->
+    <!-- Animation libraries -->
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" defer></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js" defer></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js" defer></script>
+
+
+    <!-- Local -->
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

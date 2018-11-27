@@ -1,0 +1,159 @@
+#slider {
+	background: #e0e0e0;
+	padding-top: 12.5rem;
+	padding-bottom: 12.5rem;
+}
+
+.slider__list {
+	display: flex;
+	justify-content: around;
+
+	li {
+    width: 160px;
+		text-align: center;
+		font-family: 'Gotham Pro Black';
+
+		@media (max-width: 992px) {
+			width: 160px;
+    	}
+
+		&:hover {
+			cursor: pointer;
+			color: $purple;
+		}
+	}
+
+	li.active {
+    text-align: center;
+		width: 160px;
+		background: linear-gradient($purple, $violet);
+		   -moz-border-radius: 70px; 
+		   -webkit-border-radius: 70px; 
+		   border-radius: 70px;
+		color: #fff;
+	}
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    @media (max-width: 992px) {
+    	display: none;
+    }
+}
+
+.slider__img {
+ 	@media (max-width: 992px) {
+    	display: none;
+    }
+}
+
+.slider__primary {
+	font-size: 1.5rem;
+	font-family: 'Gotham Pro Black';
+	text-transform: uppercase;
+}
+
+.slider__sub {
+	font-size: 1.125rem;
+	font-family: 'Gotham Pro Regular';
+}
+
+.slider__text {
+	margin-top: 3rem;
+}
+
+.slider__link {
+	a {
+		font-size: 1rem;
+		font-family: 'Gotham Pro Black';
+		color: $purple;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	a:hover {
+		cursor: pointer;
+		text-decoration: none;
+		color: $purple;
+	}
+}
+
+// dots animation
+.slider-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-bottom: 3px;
+  background: $purple;
+}
+
+.slider-dot-2 {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-bottom: 3px;
+  background: $purple;
+}
+
+.slider-dot-3 {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-bottom: 3px;
+  background: $purple;
+}
+
+.slider-dots-animation:hover .slider-dot {
+    animation: wave 0.9s linear;   
+}
+
+.slider-dots-animation:hover .slider-dot-2 {
+    animation: wave 1.2s linear;   
+}
+
+.slider-dots-animation:hover .slider-dot-3 {
+    animation: wave 1.5s linear;   
+}
+
+@keyframes wave {
+  0%, 60%, 100% {
+    transform: initial;
+  }
+  30% {
+    transform: translateY(-8px);
+  }
+}
+
+
+// slider
+.slider__wrap {
+	position: relative;
+}
+
+.fade-transition {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}

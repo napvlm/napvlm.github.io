@@ -1,0 +1,154 @@
+#managers {
+	background: -webkit-linear-gradient(30deg,$orange, $yellow, $yellow);
+	height: 100%;
+	width: 100vw;
+	margin: 0 !important;
+	padding: 0 !important;
+	border-width: 0;
+}
+
+.managers__photo {
+	@media (max-width:992px)  {
+		display: none !important;
+	}
+
+	&-bg {
+		position: absolute;
+		bottom: 0;
+		margin-left: 10%;
+	}
+
+	&-avatar {
+		position: absolute;
+		bottom: 0;
+		margin-left: 10%;
+	}
+}
+
+.managers__text {
+	margin: 5%;
+	@media (max-width:992px) {
+		margin-left: 5%;
+	}
+}
+
+.managers__text-bg-mobile {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 90%;
+	z-index: 0;
+
+	@media (min-width:992px)  {
+		display: none !important;
+	}
+}
+
+.managers__primary {
+	font-size: 2.5rem;
+	font-family: 'Gotham Pro Black';
+	margin-top: 7.5rem;
+	color: #fff;
+	position: relative;
+	z-index: 2;
+}
+
+
+.managers__sub {
+	font-size: 1rem;
+	font-family: 'Gotham Pro Black';
+	margin-top: 3.75rem;
+	color: $purple;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 2;
+
+	a {
+		color: $purple;
+		text-decoration: none;
+
+		&:hover,
+		&:active {
+			color: $purple;
+			cursor: pointer;
+			text-decoration: none;
+		}
+	}
+}
+
+
+.managers__contact__info {
+	font-size: 1.125rem;
+	font-family: 'Gotham Pro Medium';
+	position: relative;
+	z-index: 2;
+
+	div {
+		margin-left: 1rem;
+	}
+}
+
+// quick link fix 
+.mailto-link {
+	text-decoration: none;
+	color: #000;
+
+	&:hover {
+		text-decoration: none;
+		color: #000;
+		cursor: pointer;
+	}
+}
+
+
+// dots animation
+.project-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-bottom: 3px;
+  background: $purple;
+}
+
+.project-dot-2 {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-bottom: 3px;
+  background: $purple;
+}
+
+.project-dot-3 {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-bottom: 3px;
+  background: $purple;
+}
+
+.project-dots-animation:hover .project-dot {
+    animation: wave 0.9s linear;   
+}
+
+.project-dots-animation:hover .project-dot-2 {
+    animation: wave 1.2s linear;   
+}
+
+.project-dots-animation:hover .project-dot-3 {
+    animation: wave 1.5s linear;   
+}
+
+@keyframes wave {
+  0%, 60%, 100% {
+    transform: initial;
+  }
+  30% {
+    transform: translateY(-8px);
+  }
+}

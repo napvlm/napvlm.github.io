@@ -1,0 +1,37 @@
+// reset
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	animation: fadeIn 1.3s ease-out;
+	overflow-x: hidden;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadein {
+  visibility: hidden;
+}
+
+// colors
+$orange: #e9833b;
+$yellow: #efcb19;
+$purple: #d4436c;
+$violet: #8141a9;

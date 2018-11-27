@@ -1,0 +1,69 @@
+
+// .services__custom__container {
+// 	@media (min-width: 1200px) {
+// 	    max-width: 1640px !important;
+// 	}
+// }
+
+.services__wrap {
+	margin-top: 12.5rem;
+	margin-bottom: 12.5rem;
+}
+
+.services__heading {
+	text-transform: uppercase;
+	background: -webkit-linear-gradient(45deg,$orange, $yellow, $yellow);
+		  -webkit-background-clip: text;
+		  -webkit-text-fill-color: transparent;
+	font-size: 1.5rem;
+	font-family: 'Gotham Pro Black';
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+
+	@media (max-width: 992px) {
+    	text-align: center;
+    }
+}
+
+.services__list {
+	font-size: 1rem;
+	font-family: 'Gotham Pro Regular';
+	transition: all .3s;
+
+	@media (max-width: 992px) {
+    	text-align: center;
+    }
+
+	li:hover {
+		color: $purple;
+		cursor: pointer;
+		transition: all .3s ease-out;
+		transform: scale(1.03);
+	}
+
+	li {
+		font-size: 1rem;
+		a {
+			font-size: 1rem;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $purple;
+			font-family: 'Gotham Pro Bold';
+
+			&:hover {
+				color: $orange;
+				cursor: pointer;
+				transition: all .3s;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.uslugi {
+	margin: 1rem;
+	transform: scale(1§) !important;
+	@media (max-width: 992px) {
+    	margin-top: 2rem;
+    }
+}
