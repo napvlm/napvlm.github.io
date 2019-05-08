@@ -5,38 +5,72 @@
 	<title>My first three.js app</title>
 	<style>
 		body { margin: 0; overflow: hidden;}
-		canvas { width: 100%; height: 100% }
 	</style>
 </head>
 <body>
 	<script src="js/three.js"></script>
 	<script>
-	// Creating scene and camera
-	 var scene = new THREE.Scene();
-	 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+	
+	var scene, sceneLight, cam, renderer, clock, portalParticles = [];
 
-	// Setting up renderer
-	 var renderer = new THREE.WebGLRenderer();
-	 renderer.setSize( window.innerWidth, window.innerHeight );
-	 document.body.appendChild( renderer.domElement );
+	function initScene() {
+		scene = new THREE.Scene();
 
-	// Creaing a a simple green cube 
-	 var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-	 var material = new THREE.MeshBasicMaterial( { color: 0x00ff90 } );
+		sceneLight = new THREE.DirectionalLight(0xffffff, 0.5);
+		sceneLight.position.set(0,0,1);
+		scene.add(sceneLight);
 
-	 var cube = new THREE.Mesh( geometry, material );
-	 scene.add ( cube );
-	// Setting up camer position to be able see the cube
-	 camera.position.z = 3;
+		cam = new THREE.PerspectiveCamera(80, window.innerWidth/window.innerHeight, 1, 10000);
+		cam.position.z = 1000;
+		scene.add(cam);
 
-	// Calling a render (animate loop)
-	 function animate() {
-	 	requestAnimationFrame( animate );
-	 	cube.rotation.x += 0.01;
-	 	cube.rotation.y += 0.01;
-	 	renderer.render( scene, camera );
-	 }
-	 animate();
+		renderer = new THREE.WebGLRenderer();
+		renderer.setClearColor(0x000000,1);
+		renderer.setSize(window.innerWidth, window.innerHeight);
+		document.body.appendChild(renderer.domElement);
+
+		particleSetup()
+	}
+
+	function particleSetup() {
+		let loader = new THREE.TextureLoader();
+
+		loader.load("smoke.png", function(texture) {
+			portalGeo = new THREE.PlaneBufferGeometry(350,350);
+			portalMaterial = new THREE.MeshStandardMaterial({
+				map: texture,
+				transparent: true
+			});
+
+			for(let p = 800; p > 250; p--) {
+				let particle = new THREE.Mesh(portalGeo,portalMaterial);
+				particle.position.set(
+					0.5 * p * Math.cos((4 * p * Math.PI) / 180),
+					0.5 * p * Math.sin((4 * p * Math.PI) / 180),
+					0.1 * p
+				);
+				particle.rotation.z = Math.random() *360;
+				portalParticles.push(particle);
+				scene.add(particle);
+			}
+
+			clock = new THREE.Clock();
+			animate();
+		});
+	}
+
+	function animate() {
+		let delta = clock.getDelta();
+		portalParticles.forEach(p => {
+			p.rotation.z -= delta *1.5;
+		});
+		renderer.render(scene, cam);
+		requestAnimationFrame(animate);
+	}
+
+	initScene();
+
+
 	</script>
 </body>
 </html>
