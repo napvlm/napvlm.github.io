@@ -1,3 +1,5 @@
+'use strict'
+
 function pageTransition() {
 
   var tl = gsap.timeline();
@@ -44,3 +46,14 @@ barba.init({
     }
   }]
 })
+
+//scroll indicator
+$(window).scroll(function(){
+  var wintop = $(window).scrollTop(), 
+      docheight = $(document).height(), 
+      winheight = $(window).height();
+
+  var scrolled = (wintop/(docheight-winheight))*100;
+      
+  $('.scrollbar').css('width', (scrolled + '%'));
+});
