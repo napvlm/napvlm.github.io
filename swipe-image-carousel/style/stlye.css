@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 5%;
+  position: relative;
+}
+.container .swiper {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 80%;
+}
+.container .swiper .swiper-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .swiper .swiper-content .item {
+  max-height: 300px;
+  display: none;
+}
+.container .swiper .swiper-content .item.active {
+  display: block;
+}
+.container .swiper .swiper-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .swiper .swiper-nav div {
+  padding: 15px 20px;
+  border-radius: 100%;
+  background: #fefefe;
+  border: 1px solid #2f2f2f;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.container .swiper .swiper-nav div:hover {
+  background: lightblue;
+}
+.container .swiper .swiper-nav div.arrow-left {
+  margin-left: 15px;
+}
+.container .swiper .swiper-nav div.arrow-right {
+  margin-right: 15px;
+}
+
+/*# sourceMappingURL=stlye.css.map */
