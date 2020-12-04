@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Langton's ant</title>
+</head>
+
+<style>
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+  }
+
+  #grid {
+    border: 1px solid rgb(44, 44, 48);
+  }
+
+  #grid + #moves {
+    margin-top: 1rem;
+  }
+
+  h3 {
+    margin-bottom: .5rem;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  .buttons-wrap {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+  }
+
+  button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 2px solid black;
+    color: black;
+    transition: .3s ease-out;
+    outline: none;
+    background: none;
+  }
+
+  button:hover,
+  button:focus,
+  button:active {
+    color: white;
+    background: black;
+  }
+
+
+  button#start {
+    font-weight: bold;
+  }
+
+</style>
+
+<body>
+  <h3>Langton's ant simulator</h3>
+  <p>Press "Start" below to begin</p>
+  <div class="buttons-wrap">
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </div>
+  <canvas id="grid" width="500" height="500"></canvas>
+  <span id="moves"></span>
+  <script>
+
+    window.onload = function() {
+      canvas = document.getElementById('grid');
+      ctx = canvas.getContext('2d');
+      const grid = new Grid(canvas.width, canvas.height);
+      grid.init();
+
+      let interval;
+      
+      BTNSTART.onclick = function() {
+        interval = setInterval(moveAnt, 1000/15, grid);
+      }
+
+      BTNSTOP.onclick = function() {
+        clearInterval(interval);
+      }
+    }
+
+    const ANTUP = 0;
+    const ANTRIGHT = 1;
+    const ANTDOWN = 2;
+    const ANTLEFT = 3;
+    const CELLSIZE = 2;
+    const CELLSTEP = 100;
+    const BTNSTART = document.getElementById('start');
+    const BTNSTOP = document.getElementById('stop');
+
+    class Ant {
+      x = 0;
+      y = 0;
+
+      direction = ANTUP;
+
+      moveForward(width, height) {
+        switch (this.direction) {
+          case ANTUP:
+            this.x = ((this.x - CELLSIZE) + width) % width;
+            break;
+          case ANTRIGHT:
+            this.y = ((this.y + CELLSIZE) + height) % height;
+            break;
+          case ANTDOWN:
+            this.x = ((this.x + CELLSIZE) + width) % width;
+            break;
+          case ANTLEFT:
+            this.y = ((this.y - CELLSIZE) + height) % height;
+            break;
+        }
+      }
+
+      rotateRight() {
+        this.direction = ((this.direction + 1) + (ANTLEFT + 1)) % (ANTLEFT + 1);
+      }
+
+      rotateLeft() {
+        this.direction = ((this.direction - 1) + (ANTLEFT + 1)) % (ANTLEFT + 1);
+      }
+    }
+
+    class Cell {
+      active = false;
+
+      setActive(active) {
+        this.active = active;
+      }
+
+      get isActive() {
+        return this.active;
+      }
+    }
+
+    class Grid {
+      cells = [];
+      ant;
+      height = 0;
+      width = 0;
+      moves = 0;
+
+      constructor(height, width) {
+        this.height = height;
+        this.width = width;
+      }
+
+      init() {
+        for (let x = 0; x < this.width; x++) {
+          this.cells[x] = [];
+          for (let y = 0; y < this.height; y++) {
+            const cell = new Cell();
+            this.cells[x][y] = cell;
+          }
+        }
+        this.ant = new Ant();
+        this.ant.x = this.width / 2;
+        this.ant.y = this.height / 2;
+      }
+
+      move () {
+        for (let i = 0; i < CELLSTEP; i++) {
+          let cell = this.cells[this.ant.x][this.ant.y];
+
+          if (cell.isActive) {
+            cell.active = false;
+            ctx.fillStyle = 'white';
+            ctx.fillRect(this.ant.x, this.ant.y, CELLSIZE, CELLSIZE);
+            this.ant.rotateRight();
+            this.ant.moveForward(this.width, this.height);
+          }
+
+          else {
+            cell.active = true;
+            ctx.fillStyle = 'black';
+            ctx.fillRect(this.ant.x, this.ant.y, CELLSIZE, CELLSIZE);
+            this.ant.rotateLeft();
+            this.ant.moveForward(this.width, this.height);
+          }
+
+          ctx.fillStyle = 'red';
+          ctx.fillRect(this.ant.x, this.ant.y, CELLSIZE, CELLSIZE);
+          this.moves++;
+        }
+      }
+    }
+
+    function moveAnt(grid) {
+      grid.move();
+      ctx.stroke();
+      var moves = document.getElementById('moves');
+      moves.innerHTML = `Ant did ${grid.moves} steps`;
+    }
+
+  </script>
+</body>
+</html>
