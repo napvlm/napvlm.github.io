@@ -1,0 +1,29 @@
+body.popup {
+    font-family: 'Monospace';
+    width: 200px;
+    height: 200px;
+}
+
+.kolo {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    border: 10px solid lightblue;
+    border-width: 10%;
+}
+
+.widgetContainer {
+    background: #0e2a36;
+    font-family: sans-serif;
+    color: #00c790;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 8px;
+}
+
+#range {
+    display: block;
+}
